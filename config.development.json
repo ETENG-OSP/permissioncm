@@ -1,0 +1,21 @@
+{
+
+  "port": 3002,
+  "database": "db",
+  "dialect": "sqlite",
+  "storage": "db.sqlite",
+
+  "swagger": {
+    "controllers": "./controllers"
+  },
+
+  "security": {
+    "tokenName": "api_key"
+  },
+
+  "feature": {
+    "id": "1",
+    "secret": "ZDE4MGZmMTYtNTI5ZC00MmIwLTliZjctNTQzNjBhOTc2ZGFi"
+  }
+
+}

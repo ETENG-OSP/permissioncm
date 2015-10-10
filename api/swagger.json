@@ -1,0 +1,647 @@
+{
+  "swagger": "2.0",
+  "info": {
+    "title": "用户权限 API",
+    "description": "用于建立用户-角色-权限的关系",
+    "version": "1.0"
+  },
+  "produces": [
+    "application/json"
+  ],
+  "consumes": [
+    "application/json"
+  ],
+  "basePath": "/",
+  "paths": {
+    "/api/permissions": {
+      "get": {
+        "x-swagger-router-controller": "permission",
+        "operationId": "find",
+        "tags": [
+          "permission"
+        ],
+        "parameters": [
+          {
+            "$ref": "#/parameters/api-key"
+          }
+        ],
+        "responses": {
+          "200": {
+            "$ref": "#/responses/Success"
+          }
+        }
+      },
+      "post": {
+        "x-swagger-router-controller": "permission",
+        "operationId": "create",
+        "tags": [
+          "permission"
+        ],
+        "parameters": [
+          {
+            "$ref": "#/parameters/api-key"
+          },
+          {
+            "name": "data",
+            "in": "body",
+            "description": "实体数据",
+            "schema": {
+              "$ref": "#/definitions/Permission"
+            }
+          }
+        ],
+        "responses": {
+          "200": {
+            "$ref": "#/responses/Success"
+          },
+          "default": {
+            "$ref": "#/responses/Error"
+          }
+        }
+      }
+    },
+    "/api/permissions/{id}": {
+      "get": {
+        "x-swagger-router-controller": "permission",
+        "operationId": "findOne",
+        "tags": [
+          "permission"
+        ],
+        "parameters": [
+          {
+            "$ref": "#/parameters/api-key"
+          },
+          {
+            "$ref": "#/parameters/id"
+          }
+        ],
+        "responses": {
+          "200": {
+            "$ref": "#/responses/Success"
+          }
+        }
+      },
+      "put": {
+        "x-swagger-router-controller": "permission",
+        "operationId": "update",
+        "tags": [
+          "permission"
+        ],
+        "parameters": [
+          {
+            "$ref": "#/parameters/api-key"
+          },
+          {
+            "$ref": "#/parameters/id"
+          },
+          {
+            "name": "data",
+            "in": "body",
+            "description": "实体数据",
+            "schema": {
+              "$ref": "#/definitions/Permission"
+            }
+          }
+        ],
+        "responses": {
+          "200": {
+            "$ref": "#/responses/Success"
+          }
+        }
+      },
+      "delete": {
+        "x-swagger-router-controller": "permission",
+        "operationId": "destroy",
+        "tags": [
+          "permission"
+        ],
+        "parameters": [
+          {
+            "$ref": "#/parameters/api-key"
+          },
+          {
+            "$ref": "#/parameters/id"
+          }
+        ],
+        "responses": {
+          "200": {
+            "$ref": "#/responses/Success"
+          }
+        }
+      }
+    },
+    "/api/roles": {
+      "get": {
+        "x-swagger-router-controller": "role",
+        "operationId": "find",
+        "tags": [
+          "role"
+        ],
+        "parameters": [
+          {
+            "$ref": "#/parameters/api-key"
+          }
+        ],
+        "responses": {
+          "200": {
+            "$ref": "#/responses/Success"
+          }
+        }
+      },
+      "post": {
+        "x-swagger-router-controller": "role",
+        "operationId": "create",
+        "tags": [
+          "role"
+        ],
+        "parameters": [
+          {
+            "$ref": "#/parameters/api-key"
+          },
+          {
+            "name": "data",
+            "in": "body",
+            "description": "实体数据",
+            "schema": {
+              "$ref": "#/definitions/Role"
+            }
+          }
+        ],
+        "responses": {
+          "200": {
+            "$ref": "#/responses/Success"
+          },
+          "default": {
+            "$ref": "#/responses/Error"
+          }
+        }
+      }
+    },
+    "/api/roles/{id}": {
+      "get": {
+        "x-swagger-router-controller": "role",
+        "operationId": "findOne",
+        "tags": [
+          "role"
+        ],
+        "parameters": [
+          {
+            "$ref": "#/parameters/api-key"
+          },
+          {
+            "$ref": "#/parameters/id"
+          }
+        ],
+        "responses": {
+          "200": {
+            "$ref": "#/responses/Success"
+          }
+        }
+      },
+      "put": {
+        "x-swagger-router-controller": "role",
+        "operationId": "update",
+        "tags": [
+          "role"
+        ],
+        "parameters": [
+          {
+            "$ref": "#/parameters/api-key"
+          },
+          {
+            "$ref": "#/parameters/id"
+          },
+          {
+            "name": "data",
+            "in": "body",
+            "description": "实体数据",
+            "schema": {
+              "$ref": "#/definitions/Role"
+            }
+          }
+        ],
+        "responses": {
+          "200": {
+            "$ref": "#/responses/Success"
+          }
+        }
+      },
+      "delete": {
+        "x-swagger-router-controller": "role",
+        "operationId": "destroy",
+        "tags": [
+          "role"
+        ],
+        "parameters": [
+          {
+            "$ref": "#/parameters/api-key"
+          },
+          {
+            "$ref": "#/parameters/id"
+          }
+        ],
+        "responses": {
+          "200": {
+            "$ref": "#/responses/Success"
+          }
+        }
+      }
+    },
+    "/api/platforms": {
+      "get": {
+        "x-swagger-router-controller": "platform",
+        "operationId": "find",
+        "tags": [
+          "platform"
+        ],
+        "parameters": [
+          {
+            "$ref": "#/parameters/api-key"
+          }
+        ],
+        "responses": {
+          "200": {
+            "$ref": "#/responses/Success"
+          }
+        }
+      },
+      "post": {
+        "x-swagger-router-controller": "platform",
+        "operationId": "create",
+        "tags": [
+          "platform"
+        ],
+        "parameters": [
+          {
+            "$ref": "#/parameters/api-key"
+          },
+          {
+            "name": "data",
+            "in": "body",
+            "description": "实体数据",
+            "schema": {
+              "$ref": "#/definitions/Platform"
+            }
+          }
+        ],
+        "responses": {
+          "200": {
+            "$ref": "#/responses/Success"
+          },
+          "default": {
+            "$ref": "#/responses/Error"
+          }
+        }
+      }
+    },
+    "/api/platforms/{id}": {
+      "get": {
+        "x-swagger-router-controller": "platform",
+        "operationId": "findOne",
+        "tags": [
+          "platform"
+        ],
+        "parameters": [
+          {
+            "$ref": "#/parameters/api-key"
+          },
+          {
+            "$ref": "#/parameters/id"
+          }
+        ],
+        "responses": {
+          "200": {
+            "$ref": "#/responses/Success"
+          }
+        }
+      },
+      "put": {
+        "x-swagger-router-controller": "platform",
+        "operationId": "update",
+        "tags": [
+          "platform"
+        ],
+        "parameters": [
+          {
+            "$ref": "#/parameters/api-key"
+          },
+          {
+            "$ref": "#/parameters/id"
+          },
+          {
+            "name": "data",
+            "in": "body",
+            "description": "实体数据",
+            "schema": {
+              "$ref": "#/definitions/Platform"
+            }
+          }
+        ],
+        "responses": {
+          "200": {
+            "$ref": "#/responses/Success"
+          }
+        }
+      },
+      "delete": {
+        "x-swagger-router-controller": "platform",
+        "operationId": "destroy",
+        "tags": [
+          "platform"
+        ],
+        "parameters": [
+          {
+            "$ref": "#/parameters/api-key"
+          },
+          {
+            "$ref": "#/parameters/id"
+          }
+        ],
+        "responses": {
+          "200": {
+            "$ref": "#/responses/Success"
+          }
+        }
+      }
+    },
+    "/api/users": {
+      "get": {
+        "x-swagger-router-controller": "user",
+        "operationId": "find",
+        "tags": [
+          "user"
+        ],
+        "parameters": [],
+        "responses": {
+          "200": {
+            "$ref": "#/responses/Success"
+          }
+        }
+      },
+      "post": {
+        "x-swagger-router-controller": "user",
+        "operationId": "create",
+        "tags": [
+          "user"
+        ],
+        "parameters": [
+          {
+            "$ref": "#/parameters/api-key"
+          },
+          {
+            "name": "data",
+            "in": "body",
+            "description": "实体数据",
+            "schema": {
+              "$ref": "#/definitions/User"
+            }
+          }
+        ],
+        "responses": {
+          "200": {
+            "$ref": "#/responses/Success"
+          },
+          "default": {
+            "$ref": "#/responses/Error"
+          }
+        }
+      }
+    },
+    "/api/users/{id}": {
+      "get": {
+        "x-swagger-router-controller": "user",
+        "operationId": "findOne",
+        "tags": [
+          "user"
+        ],
+        "parameters": [
+          {
+            "$ref": "#/parameters/api-key"
+          },
+          {
+            "$ref": "#/parameters/id"
+          }
+        ],
+        "responses": {
+          "200": {
+            "$ref": "#/responses/Success"
+          }
+        }
+      },
+      "put": {
+        "x-swagger-router-controller": "user",
+        "operationId": "update",
+        "tags": [
+          "user"
+        ],
+        "parameters": [
+          {
+            "$ref": "#/parameters/api-key"
+          },
+          {
+            "$ref": "#/parameters/id"
+          },
+          {
+            "name": "data",
+            "in": "body",
+            "description": "实体数据",
+            "schema": {
+              "$ref": "#/definitions/User"
+            }
+          }
+        ],
+        "responses": {
+          "200": {
+            "$ref": "#/responses/Success"
+          }
+        }
+      },
+      "delete": {
+        "x-swagger-router-controller": "user",
+        "operationId": "destroy",
+        "tags": [
+          "user"
+        ],
+        "parameters": [
+          {
+            "$ref": "#/parameters/api-key"
+          },
+          {
+            "$ref": "#/parameters/id"
+          }
+        ],
+        "responses": {
+          "200": {
+            "$ref": "#/responses/Success"
+          }
+        }
+      }
+    },
+    "/api/users/{id}/permissions": {
+      "get": {
+        "x-swagger-router-controller": "user",
+        "operationId": "usable",
+        "tags": [
+          "frontent"
+        ],
+        "parameters": [
+          {
+            "$ref": "#/parameters/api-key"
+          },
+          {
+            "$ref": "#/parameters/id"
+          }
+        ],
+        "responses": {
+          "200": {
+            "$ref": "#/responses/Success"
+          }
+        }
+      }
+    }
+  },
+  "definitions": {
+    "Permission": {
+      "properties": {
+        "id": {
+          "type": "string"
+        },
+        "name": {
+          "type": "string"
+        },
+        "url": {
+          "type": "string"
+        },
+        "meta": {
+          "type": "object"
+        },
+        "parent": {
+          "$ref": "#/definitions/id"
+        },
+        "platform": {
+          "$ref": "#/definitions/id"
+        },
+        "users": {
+          "type": "array",
+          "items": {
+            "$ref": "#/definitions/id"
+          }
+        },
+        "roles": {
+          "type": "array",
+          "items": {
+            "$ref": "#/definitions/id"
+          }
+        }
+      }
+    },
+    "PermissionPopulated": {
+      "properties": {
+        "id": {
+          "type": "string"
+        },
+        "name": {
+          "type": "string"
+        },
+        "url": {
+          "type": "string"
+        },
+        "meta": {
+          "type": "object"
+        },
+        "parent": {
+          "$ref": "#/definitions/id"
+        },
+        "platform": {
+          "$ref": "#/definitions/Platform"
+        }
+      }
+    },
+    "Role": {
+      "properties": {
+        "id": {
+          "type": "string"
+        },
+        "name": {
+          "type": "string"
+        },
+        "permissions": {
+          "type": "array",
+          "items": {
+            "$ref": "#/definitions/id"
+          }
+        },
+        "users": {
+          "type": "array",
+          "items": {
+            "$ref": "#/definitions/id"
+          }
+        }
+      }
+    },
+    "Platform": {
+      "properties": {
+        "id": {
+          "type": "string"
+        },
+        "code": {
+          "type": "string"
+        },
+        "name": {
+          "type": "string"
+        }
+      }
+    },
+    "User": {
+      "properties": {
+        "roles": {
+          "type": "array",
+          "items": {
+            "$ref": "#/definitions/id"
+          }
+        }
+      }
+    },
+    "id": {
+      "type": "string",
+      "default": "id"
+    },
+    "Error": {
+      "properties": {
+        "code": {
+          "type": "integer"
+        },
+        "message": {
+          "type": "string"
+        },
+        "detail": {
+          "type": "object"
+        }
+      }
+    }
+  },
+  "parameters": {
+    "id": {
+      "name": "id",
+      "description": "实体 ID",
+      "in": "path",
+      "required": true,
+      "type": "string"
+    },
+    "api-key": {
+      "name": "cm-api-key",
+      "description": "平台发行的 API_KEY",
+      "in": "header",
+      "type": "string",
+      "required": true
+    }
+  },
+  "responses": {
+    "Success": {
+      "description": "成功"
+    },
+    "Error": {
+      "description": "失败"
+    }
+  }
+}
