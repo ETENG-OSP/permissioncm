@@ -1,0 +1,71 @@
+{
+  "collection": {
+    "get": {
+      "x-swagger-router-controller": {"$ref": "#/controller"},
+      "operationId": "findAll",
+      "tags": [{"$ref": "#/name"}],
+
+      "parameters": [
+      ],
+      "responses": {
+        "200": {"$ref": "../refs.json#/responses/Success"}
+      }
+    },
+
+    "post": {
+      "x-swagger-router-controller": {"$ref": "#/controller"},
+      "operationId": "create",
+      "tags": [{"$ref": "#/name"}],
+
+      "parameters": [
+        {"$ref": "#/data"}
+      ],
+      "responses": {
+        "200": {"$ref": "../refs.json#/responses/Success"},
+        "default": {"$ref": "../refs.json#/responses/Error"}
+      }
+    }
+  },
+
+  "model": {
+    "get": {
+      "x-swagger-router-controller": {"$ref": "#/controller"},
+      "operationId": "findOne",
+      "tags": [{"$ref": "#/name"}],
+
+      "parameters": [
+        {"$ref": "../refs.json#/parameters/id"}
+      ],
+      "responses": {
+        "200": {"$ref": "../refs.json#/responses/Success"}
+      }
+    },
+
+    "put": {
+      "x-swagger-router-controller": {"$ref": "#/controller"},
+      "operationId": "update",
+      "tags": [{"$ref": "#/name"}],
+
+      "parameters": [
+        {"$ref": "../refs.json#/parameters/id"},
+        {"$ref": "#/data"}
+      ],
+      "responses": {
+        "200": {"$ref": "../refs.json#/responses/Success"}
+      }
+    },
+
+    "delete": {
+      "x-swagger-router-controller": {"$ref": "#/controller"},
+      "operationId": "destroy",
+      "tags": [{"$ref": "#/name"}],
+
+      "parameters": [
+        {"$ref": "../refs.json#/parameters/id"}
+      ],
+      "responses": {
+        "200": {"$ref": "../refs.json#/responses/Success"}
+      }
+    }
+  }
+}

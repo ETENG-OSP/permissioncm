@@ -1,0 +1,5 @@
+{
+  "title": "用户权限 API",
+  "description": "用于建立用户-角色-权限的关系",
+  "version": "1.0"
+}

@@ -1,0 +1,16 @@
+{
+  "name": "role",
+  "controller": "role",
+  "data": {
+    "name": "data",
+    "in": "body",
+    "description": "实体数据",
+    "schema": {
+      "$ref": "../refs.json#/definitions/Role"
+    }
+  },
+
+  "resource": {
+    "$ref": "../base/resource.json"
+  }
+}

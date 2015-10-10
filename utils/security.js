@@ -37,7 +37,7 @@ module.exports = function(config) {
         var payload = jwt.verify(apiKey, featureSecret, {issuer: featureId});
         req.cm.payload = payload;
         next();
-      } catch(err) {
+      } catch (err) {
         next(err);
       }
     }

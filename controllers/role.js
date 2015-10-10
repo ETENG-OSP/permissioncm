@@ -1,6 +1,8 @@
 var resourceController = require('../utils/resource-controller');
-var Role = require('../models').Role;
+var models = require('../models');
 
-var RoleController = resourceController(Role);
+var RoleController = resourceController(models.Role, {
+  permissions: models.Permission
+});
 
 module.exports = RoleController;

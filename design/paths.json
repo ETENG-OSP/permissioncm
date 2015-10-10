@@ -1,0 +1,31 @@
+{
+
+  "/permissions": {
+    "$ref": "operations/permission.json#/resource/collection"
+  },
+  "/permissions/{id}": {
+    "$ref": "operations/permission.json#/resource/model"
+  },
+
+  "/roles": {
+    "$ref": "operations/role.json#/resource/collection"
+  },
+  "/roles/{id}": {
+    "$ref": "operations/role.json#/resource/model"
+  },
+
+  "/platforms": {
+    "$ref": "operations/platform.json#/resource/collection"
+  },
+  "/platforms/{id}": {
+    "$ref": "operations/platform.json#/resource/model"
+  },
+
+  "/users/{id}": {
+    "$ref": "operations/user.json#/setRoles"
+  },
+  "/users/{id}/permissions": {
+    "$ref": "operations/user.json#/usable"
+  }
+
+}

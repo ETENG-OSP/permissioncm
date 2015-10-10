@@ -1,0 +1,13 @@
+{
+  "swagger": "2.0",
+  "info": {"$ref": "info.json"},
+
+  "produces": ["application/json"],
+  "consumes": ["application/json"],
+  "basePath": "/api",
+
+  "paths": {"$ref": "paths.json"},
+  "definitions": {"$ref": "definitions.json"},
+  "parameters": {"$ref": "parameters.json"},
+  "responses": {"$ref": "responses.json"}
+}

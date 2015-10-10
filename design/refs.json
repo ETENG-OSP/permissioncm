@@ -1,0 +1,21 @@
+{
+  "parameters": {
+    "id": {"<%= '$ref' %>": "#/parameters/id"},
+    "api-key": {"<%= '$ref' %>": "#/parameters/api-key"}
+  },
+
+  "definitions": {
+    "id": {"<%= '$ref' %>": "#/definitions/id"},
+    "User": {"<%= '$ref' %>": "#/definitions/User"},
+    "Role": {"<%= '$ref' %>": "#/definitions/Role"},
+    "Platform": {"<%= '$ref' %>": "#/definitions/Platform"},
+    "Permission": {"<%= '$ref' %>": "#/definitions/Permission"},
+    "PermissionPopulated": {"<%= '$ref' %>": "#/definitions/PermissionPopulated"},
+    "Error": {"<%= '$ref' %>": "#/definitions/Error"}
+  },
+
+  "responses": {
+    "Success": {"<%= '$ref' %>": "#/responses/Success"},
+    "Error": {"<%= '$ref' %>": "#/responses/Error"}
+  }
+}

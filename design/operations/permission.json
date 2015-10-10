@@ -1,0 +1,16 @@
+{
+  "name": "permission",
+  "controller": "permission",
+  "data": {
+    "name": "data",
+    "in": "body",
+    "description": "实体数据",
+    "schema": {
+      "$ref": "../refs.json#/definitions/Permission"
+    }
+  },
+
+  "resource": {
+    "$ref": "../base/resource.json"
+  }
+}

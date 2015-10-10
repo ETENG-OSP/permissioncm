@@ -1,0 +1,19 @@
+{
+
+  "id": {
+    "name": "id",
+    "description": "实体 ID",
+    "in": "path",
+    "required": true,
+    "type": "string"
+  },
+
+  "api-key": {
+    "name": "cm-api-key",
+    "description": "平台发行的 API_KEY",
+    "in": "header",
+    "type": "string",
+    "required": true
+  }
+
+}

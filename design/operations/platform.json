@@ -1,0 +1,16 @@
+{
+  "name": "platform",
+  "controller": "platform",
+  "data": {
+    "name": "data",
+    "in": "body",
+    "description": "实体数据",
+    "schema": {
+      "$ref": "../refs.json#/definitions/Platform"
+    }
+  },
+
+  "resource": {
+    "$ref": "../base/resource.json"
+  }
+}

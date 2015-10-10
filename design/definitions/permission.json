@@ -1,0 +1,41 @@
+{
+  "data": {
+    "properties": {
+
+      "id": {"type": "string"},
+      "name": {"type": "string"},
+      "url": {"type": "string"},
+      "meta": {"type": "object"},
+      "parent": {"$ref": "../refs.json#/definitions/id"},
+      "platform": {"$ref": "../refs.json#/definitions/Platform"}
+
+    }
+  },
+
+  "query": {
+    "properties": {
+
+      "id": {"type": "string"},
+      "name": {"type": "string"},
+      "url": {"type": "string"},
+      "meta": {"type": "object"},
+      "parent": {"$ref": "../refs.json#/definitions/id"},
+      "platform": {"$ref": "../refs.json#/definitions/id"},
+
+      "users": {
+        "type": "array",
+        "items": {
+          "$ref": "../refs.json#/definitions/id"
+        }
+      },
+
+      "roles": {
+        "type": "array",
+        "items": {
+          "$ref": "../refs.json#/definitions/id"
+        }
+      }
+
+    }
+  }
+}

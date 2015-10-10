@@ -1,0 +1,61 @@
+{
+  "Permission": {
+    "$ref": "definitions/permission.json#/query"
+  },
+
+  "PermissionPopulated": {
+    "$ref": "definitions/permission.json#/data"
+  },
+
+  "Role": {
+    "properties": {
+      "id": {"type": "string"},
+      "name": {"type": "string"},
+      "permissions": {
+        "type": "array",
+        "items": {
+          "$ref": "refs.json#/definitions/id"
+        }
+      },
+      "users": {
+        "type": "array",
+        "items": {
+          "$ref": "refs.json#/definitions/id"
+        }
+      }
+    }
+  },
+
+  "Platform": {
+    "properties": {
+      "id": {"type": "string"},
+      "code": {"type": "string"},
+      "name": {"type": "string"}
+    }
+  },
+
+  "User": {
+    "properties": {
+      "roles": {
+        "type": "array",
+        "items": {
+          "$ref": "refs.json#/definitions/id"
+        }
+      }
+    }
+  },
+
+  "id": {
+    "type": "string",
+    "default": "id"
+  },
+
+  "Error": {
+    "properties": {
+      "code": {"type": "integer"},
+      "message": {"type": "string"},
+      "detail": {"type": "object"}
+    }
+  }
+
+}
