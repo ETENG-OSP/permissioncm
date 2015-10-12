@@ -4,7 +4,11 @@ module.exports = function() {
     req.cm = req.cm || {};
 
     req.cm.param = function(name) {
-      return req.swagger.params[name].value;
+      try {
+        return req.swagger.params[name].value;
+      } catch (e) {
+        throw new Error('param ' + name + ' not found');
+      }
     };
 
     next();

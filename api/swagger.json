@@ -22,7 +22,7 @@
         ],
         "parameters": [
           {
-            "name": "include",
+            "name": "_include",
             "type": "array",
             "in": "query",
             "items": {
