@@ -24,7 +24,7 @@ module.exports = function(sequelize) {
 
   }, {
 
-    instanceMethod: {
+    instanceMethods: {
 
       setUsers: function(userIds) {
         var self = this;

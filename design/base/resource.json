@@ -5,8 +5,9 @@
       "operationId": "findAll",
       "tags": [{"$ref": "#/name"}],
 
-      "parameters": [
-      ],
+      "parameters": {
+        "$ref": "#/getListParameters"
+      },
       "responses": {
         "200": {"$ref": "../refs.json#/responses/Success"}
       }

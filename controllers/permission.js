@@ -1,9 +1,9 @@
 var resourceController = require('../utils/resource-controller');
-var Permission = require('../models').Permission;
-var Platform = require('../models').Platform;
+var models = require('../models');
 
-var PermissionController = resourceController(Permission, {
-  platform: Platform
+var PermissionController = resourceController(models.Permission, {
+  platform: models.Platform,
+  roles: models.Role
 });
 
 module.exports = PermissionController;

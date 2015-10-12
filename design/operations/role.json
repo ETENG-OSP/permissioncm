@@ -10,6 +10,8 @@
     }
   },
 
+  "getListParameters": [],
+
   "resource": {
     "$ref": "../base/resource.json"
   }

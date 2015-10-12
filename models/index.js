@@ -12,7 +12,7 @@ Role.hasMany(RoleUser);
 Permission.belongsToMany(Role, {through: 'permissions_roles'});
 Permission.belongsTo(Platform);
 Permission.belongsTo(Permission, {as: 'parent', foreignKey: 'parentId'});
-Permission.hasMany(Permission, {as: 'child', foreignKey: 'parentId'});
+Permission.hasMany(Permission, {as: 'children', foreignKey: 'parentId'});
 
 Platform.hasMany(Permission);
 

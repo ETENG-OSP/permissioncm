@@ -1,4 +1,5 @@
 var _ = require('underscore');
+var models = require('../models');
 
 function resourceControllerFactory(Model, related) {
 
@@ -8,16 +9,21 @@ function resourceControllerFactory(Model, related) {
       // TODO: filter implements
       var filter = {};
       var appId = req.cm.appId();
+      var includes = req.cm.param('include') || [];
+      var filters = req.cm.param('_filters') || '{}';
 
-      filter.applicationId = appId;
+      var where = JSON.parse(filters);
+      where.applicationId = appId;
 
-      var includes = _.map(related, function(value, key) {
-        return {model: value};
+      includes = includes.map(function(name) {
+        return {
+          association: Model.associations[name]
+        };
       });
 
       Model
         .findAll({
-          where: filter,
+          where: where,
           include: includes
         })
         .then(function(entities) {
@@ -66,21 +72,6 @@ function resourceControllerFactory(Model, related) {
             });
         })
         .catch(next);
-
-      function updateRelated(entity, data, related) {
-        var taskSet = _.reduce(data, function(memo, value, key) {
-          if (value && related && related[key]) {
-            var fnName = 'set' + capitalizeFirstLetter(key);
-            memo[key] = entity[fnName](value);
-          }
-        }, {});
-        var taskArray = _.toArray(taskSet);
-        return Promise.all(taskArray);
-      }
-
-      function capitalizeFirstLetter(string) {
-        return string.charAt(0).toUpperCase() + string.slice(1);
-      }
     },
 
     destroy: function(req, res, next) {
@@ -98,6 +89,22 @@ function resourceControllerFactory(Model, related) {
 
   };
 
+}
+
+function updateRelated(entity, data, related) {
+  var taskSet = _.reduce(data, function(memo, value, key) {
+    if (value && related && related[key]) {
+      var fnName = 'set' + capitalizeFirstLetter(key);
+      console.log('fnName', fnName);
+      memo[key] = entity[fnName](value);
+    }
+  }, {});
+  var taskArray = _.toArray(taskSet);
+  return Promise.all(taskArray);
+}
+
+function capitalizeFirstLetter(string) {
+  return string.charAt(0).toUpperCase() + string.slice(1);
 }
 
 module.exports = resourceControllerFactory;
