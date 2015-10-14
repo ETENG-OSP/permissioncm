@@ -24,7 +24,15 @@ module.exports = function(sequelize) {
 
     url: Sequelize.STRING,
 
-    meta: Sequelize.JSON
+    meta: {
+      type: Sequelize.TEXT,
+      get: function() {
+        return JSON.parse(this.getDataValue('meta'));
+      },
+      set: function(val) {
+        return this.setDataValue('meta', JSON.stringify(val));
+      }
+    }
 
   });
 

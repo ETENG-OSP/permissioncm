@@ -24,12 +24,12 @@ swaggerTools.initializeMiddleware(swaggerObject, function(middleware) {
   var app = express();
   app.use(cors());
 
-  app.use(middleware.swaggerMetadata());
   app.use(middleware.swaggerUi());
 
   app.use(security(securityOptions));
   app.use(param());
 
+  app.use(middleware.swaggerMetadata());
   app.use(middleware.swaggerRouter(routerOptions));
 
   app.use(errorhandler());

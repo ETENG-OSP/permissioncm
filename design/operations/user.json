@@ -2,10 +2,24 @@
 
   "setRoles": {
     "put": {
-      "operationId": "user_getRoles",
+      "operationId": "user_setRoles",
       "tags": ["user"],
       "description": "设置用户角色",
 
+      "parameters": [
+        {"$ref": "../refs.json#/parameters/id"}
+      ],
+      "responses": {
+        "200": {"$ref": "../refs.json#/responses/Success"}
+      }
+    }
+  },
+
+  "getRoles": {
+    "get": {
+      "operationId": "user_getRoles",
+      "tags": ["user"],
+      "description": "查询用户角色",
       "parameters": [
         {"$ref": "../refs.json#/parameters/id"}
       ],

@@ -2,7 +2,7 @@ var User = require('../models').User;
 
 function getPermissions(req, res, next) {
 
-  var userId = req.getParam('id');
+  var userId = req.cm.param('id');
 
   var user = new User(userId);
 
@@ -15,10 +15,25 @@ function getPermissions(req, res, next) {
 
 }
 
+function getRoles(req, res, next) {
+
+  var userId = req.cm.param('id');
+
+  var user = new User(userId);
+
+  user
+    .getRoles()
+    .then(function(roles) {
+      res.json(roles);
+    })
+    .catch(next);
+
+}
+
 function update(req, res, next) {
 
-  var userId = req.getParam('id');
-  var roleIds = req.getParam('roleIds');
+  var userId = req.cm.param('id');
+  var roleIds = req.cm.param('roleIds');
 
   var user = new User(userId);
 
@@ -32,4 +47,5 @@ function update(req, res, next) {
 }
 
 exports.getPermissions = getPermissions;
+exports.getRoles = getRoles;
 exports.update = update;

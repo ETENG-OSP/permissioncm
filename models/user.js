@@ -23,6 +23,23 @@ module.exports = function() {
 
   };
 
+  User.prototype.getRoles = function() {
+
+    var id = this.id;
+    var RoleUser = require('./index').RoleUser;
+    var Role = require('./index').Role;
+
+    return RoleUser.findAll({
+      where: {userId: id},
+      include: [{model: Role}]
+    }).then(function(roleUsers) {
+      return roleUsers.map(function(memo, roleUser) {
+        return roleUser.role;
+      });
+    });
+
+  };
+
   User.prototype.getPermissions = function() {
 
     var id = this.id;

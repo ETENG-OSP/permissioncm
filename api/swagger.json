@@ -26,13 +26,7 @@
             "type": "array",
             "in": "query",
             "items": {
-              "type": "string",
-              "enum": [
-                "roles",
-                "parent",
-                "children",
-                "platform"
-              ]
+              "type": "string"
             }
           },
           {
@@ -107,6 +101,14 @@
         "parameters": [
           {
             "$ref": "#/parameters/id"
+          },
+          {
+            "name": "_include",
+            "type": "array",
+            "in": "query",
+            "items": {
+              "type": "string"
+            }
           }
         ],
         "responses": {
@@ -165,7 +167,45 @@
         "tags": [
           "role"
         ],
-        "parameters": [],
+        "parameters": [
+          {
+            "name": "_include",
+            "type": "array",
+            "in": "query",
+            "items": {
+              "type": "string"
+            }
+          },
+          {
+            "name": "_perPage",
+            "type": "integer",
+            "in": "query"
+          },
+          {
+            "name": "_page",
+            "type": "integer",
+            "in": "query"
+          },
+          {
+            "name": "_sortField",
+            "type": "string",
+            "in": "query"
+          },
+          {
+            "name": "_sortDir",
+            "type": "string",
+            "in": "query",
+            "enum": [
+              "ASC",
+              "DESC"
+            ]
+          },
+          {
+            "name": "_filters",
+            "type": "string",
+            "in": "query"
+          }
+        ],
         "responses": {
           "200": {
             "$ref": "#/responses/Success"
@@ -208,6 +248,14 @@
         "parameters": [
           {
             "$ref": "#/parameters/id"
+          },
+          {
+            "name": "_include",
+            "type": "array",
+            "in": "query",
+            "items": {
+              "type": "string"
+            }
           }
         ],
         "responses": {
@@ -266,7 +314,45 @@
         "tags": [
           "platform"
         ],
-        "parameters": [],
+        "parameters": [
+          {
+            "name": "_include",
+            "type": "array",
+            "in": "query",
+            "items": {
+              "type": "string"
+            }
+          },
+          {
+            "name": "_perPage",
+            "type": "integer",
+            "in": "query"
+          },
+          {
+            "name": "_page",
+            "type": "integer",
+            "in": "query"
+          },
+          {
+            "name": "_sortField",
+            "type": "string",
+            "in": "query"
+          },
+          {
+            "name": "_sortDir",
+            "type": "string",
+            "in": "query",
+            "enum": [
+              "ASC",
+              "DESC"
+            ]
+          },
+          {
+            "name": "_filters",
+            "type": "string",
+            "in": "query"
+          }
+        ],
         "responses": {
           "200": {
             "$ref": "#/responses/Success"
@@ -309,6 +395,14 @@
         "parameters": [
           {
             "$ref": "#/parameters/id"
+          },
+          {
+            "name": "_include",
+            "type": "array",
+            "in": "query",
+            "items": {
+              "type": "string"
+            }
           }
         ],
         "responses": {
@@ -362,7 +456,7 @@
     },
     "/users/{id}": {
       "put": {
-        "operationId": "user_getRoles",
+        "operationId": "user_setRoles",
         "tags": [
           "user"
         ],

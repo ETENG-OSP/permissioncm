@@ -70,8 +70,20 @@ function resourceControllerFactory(Model, related) {
 
     findOne: function(req, res, next) {
       var id = req.cm.param('id');
+      var include = req.cm.param('_include') || [];
+
+      // association
+      include = include.map(function(name) {
+        return {
+          association: Model.associations[name]
+        };
+      });
+
       Model
-        .findOne({where: {id: id}})
+        .findOne({
+          where: {id: id},
+          include: include
+        })
         .then(function(entity) {
           res.json(entity);
         })
@@ -88,6 +100,7 @@ function resourceControllerFactory(Model, related) {
           return Model.findOne({where: {id: id}});
         })
         .then(function(entity) {
+          // return res.json(entity);
           return updateRelated(entity, data, related)
             .then(function() {
               return res.json(entity);
@@ -114,14 +127,15 @@ function resourceControllerFactory(Model, related) {
 }
 
 function updateRelated(entity, data, related) {
-  var taskSet = _.reduce(data, function(memo, value, key) {
+  var taskArray = _.reduce(data, function(memo, value, key) {
     if (value && related && related[key]) {
       var fnName = 'set' + capitalizeFirstLetter(key);
+
       console.log('fnName', fnName);
-      memo[key] = entity[fnName](value);
+      memo.push(entity[fnName](value));
     }
-  }, {});
-  var taskArray = _.toArray(taskSet);
+    return memo;
+  }, []);
   return Promise.all(taskArray);
 }
 
