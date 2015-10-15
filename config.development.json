@@ -10,7 +10,8 @@
   },
 
   "security": {
-    "tokenName": "cm-api-key"
+    "tokenName": "cm-api-key",
+    "tokenAlias": "api_key"
   },
 
   "feature": {

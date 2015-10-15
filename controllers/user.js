@@ -21,19 +21,22 @@ function getRoles(req, res, next) {
 
   var user = new User(userId);
 
+  console.log('=== get roles', userId);
+
   user
     .getRoles()
     .then(function(roles) {
+      console.log('=== results', roles);
       res.json(roles);
     })
     .catch(next);
 
 }
 
-function update(req, res, next) {
+function setRoles(req, res, next) {
 
   var userId = req.cm.param('id');
-  var roleIds = req.cm.param('roleIds');
+  var roleIds = req.cm.param('data').roles;
 
   var user = new User(userId);
 
@@ -48,4 +51,4 @@ function update(req, res, next) {
 
 exports.getPermissions = getPermissions;
 exports.getRoles = getRoles;
-exports.update = update;
+exports.setRoles = setRoles;

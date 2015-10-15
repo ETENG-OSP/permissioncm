@@ -33,7 +33,7 @@ module.exports = function() {
       where: {userId: id},
       include: [{model: Role}]
     }).then(function(roleUsers) {
-      return roleUsers.map(function(memo, roleUser) {
+      return roleUsers.map(function(roleUser) {
         return roleUser.role;
       });
     });

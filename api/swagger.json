@@ -464,6 +464,13 @@
         "parameters": [
           {
             "$ref": "#/parameters/id"
+          },
+          {
+            "name": "data",
+            "in": "body",
+            "schema": {
+              "$ref": "#/definitions/User"
+            }
           }
         ],
         "responses": {
@@ -480,6 +487,25 @@
           "user"
         ],
         "description": "查询用户权限",
+        "parameters": [
+          {
+            "$ref": "#/parameters/id"
+          }
+        ],
+        "responses": {
+          "200": {
+            "$ref": "#/responses/Success"
+          }
+        }
+      }
+    },
+    "/users/{id}/roles": {
+      "get": {
+        "operationId": "user_getRoles",
+        "tags": [
+          "user"
+        ],
+        "description": "查询用户角色",
         "parameters": [
           {
             "$ref": "#/parameters/id"

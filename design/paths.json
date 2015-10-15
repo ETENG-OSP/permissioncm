@@ -26,6 +26,9 @@
   },
   "/users/{id}/permissions": {
     "$ref": "operations/user.json#/usable"
+  },
+  "/users/{id}/roles": {
+    "$ref": "operations/user.json#/getRoles"
   }
 
 }
