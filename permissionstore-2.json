@@ -1,0 +1,2546 @@
+{
+  "data": {
+    "permission": [
+      {
+        "id": "bb9424ae-a9d0-4529-83f0-fe97b586ddbb",
+        "name": "新增订单",
+        "url": "title.followproductlist",
+        "meta": {
+          "ordervalue": "1",
+          "icon_url": "images/3.png",
+          "remark": "业务代表代替客户下单"
+        },
+        "code": "neworder",
+        "platform": "d35fc6b6-3b3a-4b96-b29e-b1fe15135782",
+        "createdAt": "2015-09-17T10:20:24.760Z",
+        "updatedAt": "2015-09-18T03:51:43.627Z"
+      },
+      {
+        "id": "a1b7affc-ab32-4637-b695-6712f85ce34d",
+        "name": "查看订单",
+        "url": "title.orderList",
+        "meta": {
+          "ordervalue": "2",
+          "icon_url": "images/3.png",
+          "remark": "查看订单进度"
+        },
+        "code": "vieworder",
+        "platform": "d35fc6b6-3b3a-4b96-b29e-b1fe15135782",
+        "createdAt": "2015-09-17T10:22:26.257Z",
+        "updatedAt": "2015-10-09T02:50:03.931Z"
+      },
+      {
+        "id": "45d378c9-87be-4ed6-af79-329c9bcaed41",
+        "name": "客户",
+        "url": "title.myCustomer({type:'todetailcustomer'})",
+        "meta": {
+          "ordervalue": "3"
+        },
+        "code": "customer",
+        "platform": "d35fc6b6-3b3a-4b96-b29e-b1fe15135782",
+        "createdAt": "2015-09-17T10:23:18.187Z",
+        "updatedAt": "2015-09-17T10:23:49.281Z"
+      },
+      {
+        "id": "7ec0d9ba-9941-4263-88ac-0321242132ac",
+        "name": "业绩",
+        "url": "title.achievement",
+        "meta": {
+          "ordervalue": "1"
+        },
+        "code": "achievement",
+        "platform": "d35fc6b6-3b3a-4b96-b29e-b1fe15135782",
+        "createdAt": "2015-09-18T03:21:22.140Z",
+        "updatedAt": "2015-10-09T10:49:28.625Z"
+      },
+      {
+        "id": "82b51fe3-96fb-4924-877d-13d1ecfcece4",
+        "name": "工作圈",
+        "url": "homepage",
+        "meta": {
+          "ordervalue": "1"
+        },
+        "code": "homepage",
+        "platform": "d35fc6b6-3b3a-4b96-b29e-b1fe15135782",
+        "createdAt": "2015-09-18T03:23:14.898Z",
+        "updatedAt": "2015-10-09T10:48:51.541Z"
+      },
+      {
+        "id": "2fbe8133-9c59-45fb-8372-f1fcb0d6f945",
+        "name": "发运",
+        "url": "",
+        "meta": {
+          "ordervalue": "2",
+          "iconclass": "iconfonts fa fa-truck"
+        },
+        "code": "fayun",
+        "platform": "547fa184-7689-4ecd-bb79-3106ae623271",
+        "createdAt": "2015-09-18T08:25:05.467Z",
+        "updatedAt": "2015-10-15T06:25:22.278Z"
+      },
+      {
+        "id": "cdad2c92-e002-446a-87c2-a030cc5442e0",
+        "name": "订单控制台",
+        "url": "index.backstage",
+        "meta": {
+          "ordervalue": "3"
+        },
+        "code": "orderconsole",
+        "platform": "547fa184-7689-4ecd-bb79-3106ae623271",
+        "parent": "2fbe8133-9c59-45fb-8372-f1fcb0d6f945",
+        "createdAt": "2015-09-18T08:26:21.494Z",
+        "updatedAt": "2015-10-15T03:12:21.537Z"
+      },
+      {
+        "id": "c1e6f65b-cad2-4bdd-804a-2d30011678ab",
+        "name": "分仓调度",
+        "url": "index.orderinfo",
+        "meta": {
+          "ordervalue": "1"
+        },
+        "code": "fencang",
+        "platform": "547fa184-7689-4ecd-bb79-3106ae623271",
+        "parent": "2fbe8133-9c59-45fb-8372-f1fcb0d6f945",
+        "createdAt": "2015-09-18T08:27:25.497Z",
+        "updatedAt": "2015-09-18T09:21:39.924Z"
+      },
+      {
+        "id": "adf4a40e-d6d4-4b18-afd8-b857e4554924",
+        "name": "一级节点",
+        "url": "one",
+        "meta": {
+          "ordervalue": "1",
+          "iconclass": "iconfonts fa fa-truck"
+        },
+        "code": "one",
+        "platform": "547fa184-7689-4ecd-bb79-3106ae623271",
+        "createdAt": "2015-09-18T10:44:22.328Z",
+        "updatedAt": "2015-09-25T07:23:12.907Z"
+      },
+      {
+        "id": "2fcb8d06-ff00-4f3f-b50c-59ed2c059bd6",
+        "name": "二级节点",
+        "url": "two({\"type\":\"hello\"})",
+        "meta": {
+          "ordervalue": "1",
+          "iconclass": "iconfonts fa fa-truck"
+        },
+        "code": "two",
+        "platform": "547fa184-7689-4ecd-bb79-3106ae623271",
+        "parent": "adf4a40e-d6d4-4b18-afd8-b857e4554924",
+        "createdAt": "2015-09-18T10:45:08.060Z",
+        "updatedAt": "2015-09-25T07:23:22.684Z"
+      },
+      {
+        "id": "09584009-f894-4845-929c-5d42743a746e",
+        "name": "三级节点",
+        "url": "three",
+        "meta": {
+          "ordervalue": "1",
+          "iconclass": "iconfonts fa fa-truck"
+        },
+        "code": "three",
+        "platform": "547fa184-7689-4ecd-bb79-3106ae623271",
+        "parent": "2fcb8d06-ff00-4f3f-b50c-59ed2c059bd6",
+        "createdAt": "2015-09-18T10:45:47.201Z",
+        "updatedAt": "2015-09-25T07:23:32.353Z"
+      },
+      {
+        "id": "2b816b12-2182-40fa-92ff-db6239c8368f",
+        "name": "采购",
+        "url": "caigou",
+        "meta": {},
+        "code": "caigou",
+        "platform": "d35fc6b6-3b3a-4b96-b29e-b1fe15135782",
+        "createdAt": "2015-09-28T09:56:08.215Z",
+        "updatedAt": "2015-09-28T09:56:35.062Z"
+      },
+      {
+        "id": "c2c04a82-ec31-4e9f-ad2b-ea562c2486df",
+        "name": "我问问",
+        "createdAt": "2015-10-08T10:55:15.322Z",
+        "updatedAt": "2015-10-08T10:55:15.322Z"
+      },
+      {
+        "id": "f91cc47c-b184-4d1f-86d1-618e9300339c",
+        "name": "首页",
+        "url": "index.main",
+        "meta": {
+          "ordervalue": "3",
+          "iconclass": "iconfonts fa fa-home"
+        },
+        "code": "main",
+        "platform": "547fa184-7689-4ecd-bb79-3106ae623271",
+        "createdAt": "2015-10-09T02:51:07.018Z",
+        "updatedAt": "2015-10-15T03:09:19.606Z"
+      },
+      {
+        "id": "8df1e428-2f5d-40d0-af4a-95eb0da29c8f",
+        "name": "订单控制台",
+        "url": "index.backstage",
+        "meta": {
+          "ordervalue": "1"
+        },
+        "code": "control",
+        "platform": "547fa184-7689-4ecd-bb79-3106ae623271",
+        "parent": "2fbe8133-9c59-45fb-8372-f1fcb0d6f945",
+        "createdAt": "2015-10-09T02:53:22.650Z",
+        "updatedAt": "2015-10-15T03:07:58.674Z"
+      },
+      {
+        "id": "3bcc6b58-6c4d-44a3-aaad-8b39f629ca26",
+        "name": "分仓调度",
+        "url": "index.orderinfo",
+        "meta": {},
+        "code": "fstore",
+        "platform": "547fa184-7689-4ecd-bb79-3106ae623271",
+        "parent": "2fbe8133-9c59-45fb-8372-f1fcb0d6f945",
+        "createdAt": "2015-10-09T02:54:44.752Z",
+        "updatedAt": "2015-10-09T03:02:12.463Z"
+      },
+      {
+        "id": "4d54140b-8732-423d-b761-520b440f9482",
+        "name": "物流配车",
+        "url": "index.freight",
+        "meta": {},
+        "code": "freight",
+        "platform": "547fa184-7689-4ecd-bb79-3106ae623271",
+        "parent": "2fbe8133-9c59-45fb-8372-f1fcb0d6f945",
+        "createdAt": "2015-10-09T03:04:36.959Z",
+        "updatedAt": "2015-10-09T03:05:29.117Z"
+      },
+      {
+        "id": "0c06f9b2-529b-45d9-9dd6-981791efc9c9",
+        "name": "开单审价",
+        "url": "index.deliver",
+        "meta": {},
+        "code": "deliver",
+        "platform": "547fa184-7689-4ecd-bb79-3106ae623271",
+        "parent": "2fbe8133-9c59-45fb-8372-f1fcb0d6f945",
+        "createdAt": "2015-10-09T03:05:41.542Z",
+        "updatedAt": "2015-10-09T03:06:28.721Z"
+      },
+      {
+        "id": "20d8dd8e-afe0-4a3d-8dc1-a15e32b054e8",
+        "name": "退货申请",
+        "url": "index.returnGoods",
+        "meta": {},
+        "code": "returngoods",
+        "platform": "547fa184-7689-4ecd-bb79-3106ae623271",
+        "parent": "2fbe8133-9c59-45fb-8372-f1fcb0d6f945",
+        "createdAt": "2015-10-09T03:11:31.870Z",
+        "updatedAt": "2015-10-09T09:38:17.036Z"
+      },
+      {
+        "id": "c9cef495-d61f-49eb-b8e9-d7ee4bed742b",
+        "name": "市场",
+        "url": "index.main",
+        "meta": {},
+        "code": "bazaar",
+        "platform": "547fa184-7689-4ecd-bb79-3106ae623271",
+        "createdAt": "2015-10-09T03:22:04.017Z",
+        "updatedAt": "2015-10-09T03:23:28.630Z"
+      },
+      {
+        "id": "0805f0d9-83a9-4126-aa9f-a41e0252920b",
+        "name": "价格信息",
+        "url": "index.tariff",
+        "meta": {},
+        "code": "tariff",
+        "platform": "547fa184-7689-4ecd-bb79-3106ae623271",
+        "parent": "c9cef495-d61f-49eb-b8e9-d7ee4bed742b",
+        "createdAt": "2015-10-09T03:23:41.380Z",
+        "updatedAt": "2015-10-09T03:24:29.409Z"
+      },
+      {
+        "id": "dce708a8-3ca0-4b6c-b216-ba0b03f52dc2",
+        "name": "期货",
+        "url": "index.main",
+        "meta": {},
+        "code": "futures",
+        "platform": "547fa184-7689-4ecd-bb79-3106ae623271",
+        "createdAt": "2015-10-09T03:24:55.724Z",
+        "updatedAt": "2015-10-09T03:25:46.707Z"
+      },
+      {
+        "id": "a443ab82-8652-47bd-ba85-6041f1b6bafb",
+        "name": "个人信息",
+        "url": "index.infor",
+        "meta": {},
+        "code": "infor",
+        "platform": "547fa184-7689-4ecd-bb79-3106ae623271",
+        "createdAt": "2015-10-09T03:25:19.902Z",
+        "updatedAt": "2015-10-09T03:25:48.836Z"
+      },
+      {
+        "id": "53777831-8c16-4292-9f4e-cc0a87d848dd",
+        "name": "拜访明细",
+        "url": "index.visit-detail",
+        "meta": {},
+        "code": "visit-detail",
+        "platform": "547fa184-7689-4ecd-bb79-3106ae623271",
+        "parent": "8fa594ac-6786-4229-9bc6-4e16e114ed0e",
+        "createdAt": "2015-10-09T03:26:12.462Z",
+        "updatedAt": "2015-10-09T03:59:09.147Z"
+      },
+      {
+        "id": "a16b9c1c-1eb9-4be4-ab21-6df3ed7ce16f",
+        "name": "客户",
+        "url": "",
+        "meta": {},
+        "code": "cust",
+        "platform": "547fa184-7689-4ecd-bb79-3106ae623271",
+        "createdAt": "2015-10-09T03:30:44.498Z",
+        "updatedAt": "2015-10-15T05:39:37.796Z"
+      },
+      {
+        "id": "1f45e4ea-2d8e-46cb-8d32-5f255f4722d4",
+        "name": "款项入账",
+        "url": "index.payments-entry",
+        "meta": {},
+        "code": "entry",
+        "platform": "547fa184-7689-4ecd-bb79-3106ae623271",
+        "parent": "a16b9c1c-1eb9-4be4-ab21-6df3ed7ce16f",
+        "createdAt": "2015-10-09T03:31:43.827Z",
+        "updatedAt": "2015-10-09T10:08:43.410Z"
+      },
+      {
+        "id": "e4075e01-8ca0-4312-b0b6-4d6c68637428",
+        "name": "外勤报表",
+        "url": "index.main",
+        "meta": {},
+        "createdAt": "2015-10-09T03:32:41.816Z",
+        "updatedAt": "2015-10-15T03:51:04.591Z"
+      },
+      {
+        "id": "843b678c-dab6-4504-a2db-48e7bb2211f6",
+        "name": "资金调整",
+        "url": "index.deduct",
+        "meta": {},
+        "code": "deduct",
+        "platform": "547fa184-7689-4ecd-bb79-3106ae623271",
+        "parent": "a16b9c1c-1eb9-4be4-ab21-6df3ed7ce16f",
+        "createdAt": "2015-10-09T03:32:48.438Z",
+        "updatedAt": "2015-10-09T10:28:16.927Z"
+      },
+      {
+        "id": "5ac614e8-3e61-47be-bd31-425558bb455b",
+        "name": "账户管理",
+        "url": "index.fund-manage",
+        "meta": {},
+        "code": "manage",
+        "platform": "547fa184-7689-4ecd-bb79-3106ae623271",
+        "parent": "a16b9c1c-1eb9-4be4-ab21-6df3ed7ce16f",
+        "createdAt": "2015-10-09T03:33:36.199Z",
+        "updatedAt": "2015-10-09T10:25:19.023Z"
+      },
+      {
+        "id": "9e50e03d-8a4e-44c1-8f0e-8799b9ba3b0c",
+        "name": "报表",
+        "url": "index.mian",
+        "meta": {},
+        "code": "baobiao",
+        "platform": "547fa184-7689-4ecd-bb79-3106ae623271",
+        "createdAt": "2015-10-09T03:33:40.209Z",
+        "updatedAt": "2015-10-15T03:43:05.959Z"
+      },
+      {
+        "id": "6da42789-f85b-442e-957c-653f25832275",
+        "name": "采购报表",
+        "url": "index.main",
+        "meta": {},
+        "platform": "547fa184-7689-4ecd-bb79-3106ae623271",
+        "parent": "9e50e03d-8a4e-44c1-8f0e-8799b9ba3b0c",
+        "createdAt": "2015-10-09T03:34:38.925Z",
+        "updatedAt": "2015-10-15T03:51:29.173Z"
+      },
+      {
+        "id": "1598acc1-1435-48e7-8bc4-0e3b5d5efddc",
+        "name": "保证金转发贷款",
+        "url": "index.bail-customer",
+        "meta": {},
+        "code": "bail",
+        "platform": "547fa184-7689-4ecd-bb79-3106ae623271",
+        "parent": "a16b9c1c-1eb9-4be4-ab21-6df3ed7ce16f",
+        "createdAt": "2015-10-09T03:35:54.725Z",
+        "updatedAt": "2015-10-09T10:30:59.667Z"
+      },
+      {
+        "id": "c28833f4-1ca2-4c17-9219-09d79510c9a4",
+        "name": "采购进度统计",
+        "url": "index.purchase-schedule",
+        "meta": {},
+        "code": "purchase-schedule",
+        "platform": "547fa184-7689-4ecd-bb79-3106ae623271",
+        "parent": "6da42789-f85b-442e-957c-653f25832275",
+        "createdAt": "2015-10-09T03:36:38.040Z",
+        "updatedAt": "2015-10-09T03:37:08.478Z"
+      },
+      {
+        "id": "f6e3d884-8231-4940-9586-a358961dede1",
+        "name": "仓库报表",
+        "url": "index.main",
+        "meta": {},
+        "platform": "547fa184-7689-4ecd-bb79-3106ae623271",
+        "parent": "9e50e03d-8a4e-44c1-8f0e-8799b9ba3b0c",
+        "createdAt": "2015-10-09T03:37:20.590Z",
+        "updatedAt": "2015-10-15T03:52:12.265Z"
+      },
+      {
+        "id": "25e648a8-1eac-4309-bc4a-6e2b2cb2f451",
+        "name": "产品存量分布",
+        "url": "index.stock-distribution",
+        "meta": {},
+        "code": "stock-distribution",
+        "platform": "547fa184-7689-4ecd-bb79-3106ae623271",
+        "parent": "f6e3d884-8231-4940-9586-a358961dede1",
+        "createdAt": "2015-10-09T03:38:01.281Z",
+        "updatedAt": "2015-10-09T03:38:30.276Z"
+      },
+      {
+        "id": "f8b25671-e210-4054-847a-e275a73eb830",
+        "name": "仓库库存统计",
+        "url": "index.stock-statistics",
+        "meta": {},
+        "code": "stock-statistics",
+        "platform": "547fa184-7689-4ecd-bb79-3106ae623271",
+        "parent": "f6e3d884-8231-4940-9586-a358961dede1",
+        "createdAt": "2015-10-09T03:38:53.156Z",
+        "updatedAt": "2015-10-09T03:39:18.101Z"
+      },
+      {
+        "id": "3d81036a-3c1b-4a9c-b347-85daa35a1e17",
+        "name": "出入库流水",
+        "url": "index.stock-outin",
+        "meta": {},
+        "code": "stock-outin",
+        "platform": "547fa184-7689-4ecd-bb79-3106ae623271",
+        "parent": "f6e3d884-8231-4940-9586-a358961dede1",
+        "createdAt": "2015-10-09T03:39:34.385Z",
+        "updatedAt": "2015-10-09T03:39:54.815Z"
+      },
+      {
+        "id": "0939a68c-1be4-4d7d-ad26-99f8f17f1e07",
+        "name": "仓库",
+        "url": "index.main",
+        "meta": {},
+        "code": "storc",
+        "platform": "547fa184-7689-4ecd-bb79-3106ae623271",
+        "createdAt": "2015-10-09T03:40:00.525Z",
+        "updatedAt": "2015-10-09T03:48:12.795Z"
+      },
+      {
+        "id": "10fadccc-8e26-41cb-a249-45c30ee3453b",
+        "name": "收发存汇总",
+        "url": "index.stock-transceive",
+        "meta": {},
+        "code": "stock-transceive",
+        "platform": "547fa184-7689-4ecd-bb79-3106ae623271",
+        "parent": "f6e3d884-8231-4940-9586-a358961dede1",
+        "createdAt": "2015-10-09T03:42:12.947Z",
+        "updatedAt": "2015-10-09T03:42:35.749Z"
+      },
+      {
+        "id": "031a32f0-63dc-4f9a-ae20-81886246f5e3",
+        "name": "销售报表",
+        "url": "index.main",
+        "meta": {},
+        "platform": "547fa184-7689-4ecd-bb79-3106ae623271",
+        "parent": "9e50e03d-8a4e-44c1-8f0e-8799b9ba3b0c",
+        "createdAt": "2015-10-09T03:42:48.438Z",
+        "updatedAt": "2015-10-15T03:52:45.921Z"
+      },
+      {
+        "id": "09d7cb88-7d4b-433c-85da-d596c03f1e7b",
+        "name": "客户销售统计",
+        "url": "index.daily-sales",
+        "meta": {},
+        "code": "daily-sales",
+        "platform": "547fa184-7689-4ecd-bb79-3106ae623271",
+        "parent": "031a32f0-63dc-4f9a-ae20-81886246f5e3",
+        "createdAt": "2015-10-09T03:43:13.795Z",
+        "updatedAt": "2015-10-09T03:43:42.014Z"
+      },
+      {
+        "id": "40ecbfea-c8ce-414a-b652-b45b94e72196",
+        "name": "客户发货明细",
+        "url": "index.delivery-detail",
+        "meta": {},
+        "code": "delivery-detail",
+        "platform": "547fa184-7689-4ecd-bb79-3106ae623271",
+        "parent": "031a32f0-63dc-4f9a-ae20-81886246f5e3",
+        "createdAt": "2015-10-09T03:43:56.131Z",
+        "updatedAt": "2015-10-09T03:44:21.754Z"
+      },
+      {
+        "id": "a8bca184-d758-4761-bf7b-ebe177647323",
+        "name": "区域销售统计",
+        "url": "index.region-sales",
+        "meta": {},
+        "code": "region-sales",
+        "platform": "547fa184-7689-4ecd-bb79-3106ae623271",
+        "parent": "031a32f0-63dc-4f9a-ae20-81886246f5e3",
+        "createdAt": "2015-10-09T03:44:34.964Z",
+        "updatedAt": "2015-10-09T03:44:58.007Z"
+      },
+      {
+        "id": "2dc76c97-7a71-4a03-a213-bb7ee410b3b3",
+        "name": "客户发货退货统计",
+        "url": "index.delivery-back",
+        "meta": {},
+        "code": "delivery-back",
+        "platform": "547fa184-7689-4ecd-bb79-3106ae623271",
+        "parent": "031a32f0-63dc-4f9a-ae20-81886246f5e3",
+        "createdAt": "2015-10-09T03:45:11.123Z",
+        "updatedAt": "2015-10-09T03:45:32.022Z"
+      },
+      {
+        "id": "12df065a-6728-43ac-8191-f39f42432b4c",
+        "name": "财务报表",
+        "url": "index.main",
+        "meta": {},
+        "platform": "547fa184-7689-4ecd-bb79-3106ae623271",
+        "parent": "9e50e03d-8a4e-44c1-8f0e-8799b9ba3b0c",
+        "createdAt": "2015-10-09T03:45:45.282Z",
+        "updatedAt": "2015-10-15T03:53:08.194Z"
+      },
+      {
+        "id": "74b4bdf2-08e4-4db2-8b8d-e15093344fbd",
+        "name": "客户打款入账明细",
+        "url": "index.enter-detail",
+        "meta": {},
+        "code": "enter-detail",
+        "platform": "547fa184-7689-4ecd-bb79-3106ae623271",
+        "parent": "12df065a-6728-43ac-8191-f39f42432b4c",
+        "createdAt": "2015-10-09T03:46:18.671Z",
+        "updatedAt": "2015-10-09T03:46:38.004Z"
+      },
+      {
+        "id": "88154f0a-428d-48af-bb6c-849ac4fa9c66",
+        "name": "客户资金收支汇总",
+        "url": "index.money-summary",
+        "meta": {},
+        "code": "money-summary",
+        "platform": "547fa184-7689-4ecd-bb79-3106ae623271",
+        "parent": "12df065a-6728-43ac-8191-f39f42432b4c",
+        "createdAt": "2015-10-09T03:48:03.500Z",
+        "updatedAt": "2015-10-09T03:48:24.380Z"
+      },
+      {
+        "id": "c49ccb5e-6f1e-4df6-9cdb-88beb1f7aa46",
+        "name": "调拨申请",
+        "url": "index.allot",
+        "meta": {},
+        "code": "allot",
+        "platform": "547fa184-7689-4ecd-bb79-3106ae623271",
+        "parent": "0939a68c-1be4-4d7d-ad26-99f8f17f1e07",
+        "createdAt": "2015-10-09T03:48:28.514Z",
+        "updatedAt": "2015-10-09T03:49:18.344Z"
+      },
+      {
+        "id": "38a64e00-deb4-4924-809a-e665df849ae8",
+        "name": "客户资金收支明细",
+        "url": "index.payment-details",
+        "meta": {},
+        "code": "payment-details",
+        "platform": "547fa184-7689-4ecd-bb79-3106ae623271",
+        "parent": "12df065a-6728-43ac-8191-f39f42432b4c",
+        "createdAt": "2015-10-09T03:48:37.445Z",
+        "updatedAt": "2015-10-09T03:49:02.022Z"
+      },
+      {
+        "id": "70a68d9f-723c-4724-a104-f89b29dc4aeb",
+        "name": "客户货款发货明细",
+        "url": "index.funds-details",
+        "meta": {},
+        "code": "funds-details",
+        "platform": "547fa184-7689-4ecd-bb79-3106ae623271",
+        "parent": "12df065a-6728-43ac-8191-f39f42432b4c",
+        "createdAt": "2015-10-09T03:49:23.837Z",
+        "updatedAt": "2015-10-09T03:49:44.549Z"
+      },
+      {
+        "id": "5a0837c1-51c5-427d-a3f3-dfa053af1d81",
+        "name": "单据回收站",
+        "url": "index.recyclebin",
+        "meta": {},
+        "code": "recyclebin",
+        "platform": "547fa184-7689-4ecd-bb79-3106ae623271",
+        "parent": "0939a68c-1be4-4d7d-ad26-99f8f17f1e07",
+        "createdAt": "2015-10-09T03:49:54.637Z",
+        "updatedAt": "2015-10-09T03:50:39.013Z"
+      },
+      {
+        "id": "8fa594ac-6786-4229-9bc6-4e16e114ed0e",
+        "name": "外勤报表",
+        "url": "index.main",
+        "meta": {},
+        "platform": "547fa184-7689-4ecd-bb79-3106ae623271",
+        "parent": "9e50e03d-8a4e-44c1-8f0e-8799b9ba3b0c",
+        "createdAt": "2015-10-09T03:50:06.285Z",
+        "updatedAt": "2015-10-15T03:55:56.826Z"
+      },
+      {
+        "id": "3591b9de-d2a9-4642-a5c8-d1f4f13087ac",
+        "name": "单据打印",
+        "url": "index.print",
+        "meta": {},
+        "code": "print",
+        "platform": "547fa184-7689-4ecd-bb79-3106ae623271",
+        "parent": "0939a68c-1be4-4d7d-ad26-99f8f17f1e07",
+        "createdAt": "2015-10-09T03:51:00.433Z",
+        "updatedAt": "2015-10-09T03:54:34.231Z"
+      },
+      {
+        "id": "f66ebb08-aeeb-4e3f-83dd-393e9db10a96",
+        "name": "采集数据展示",
+        "url": "index.colreport",
+        "meta": {},
+        "code": "colreport",
+        "platform": "547fa184-7689-4ecd-bb79-3106ae623271",
+        "parent": "8fa594ac-6786-4229-9bc6-4e16e114ed0e",
+        "createdAt": "2015-10-09T03:51:28.104Z",
+        "updatedAt": "2015-10-09T03:53:23.911Z"
+      },
+      {
+        "id": "f93e818a-a776-4f77-b69e-091bf41f095c",
+        "name": "考勤统计",
+        "url": "index.attendance",
+        "meta": {},
+        "code": "attendance",
+        "platform": "547fa184-7689-4ecd-bb79-3106ae623271",
+        "parent": "8fa594ac-6786-4229-9bc6-4e16e114ed0e",
+        "createdAt": "2015-10-09T03:53:34.360Z",
+        "updatedAt": "2015-10-09T03:54:01.961Z"
+      },
+      {
+        "id": "6a76847f-beac-497e-b361-5b80bd83e329",
+        "name": "考勤明细",
+        "url": "index.attendance-detail",
+        "meta": {},
+        "code": "attendance-detail",
+        "platform": "547fa184-7689-4ecd-bb79-3106ae623271",
+        "parent": "8fa594ac-6786-4229-9bc6-4e16e114ed0e",
+        "createdAt": "2015-10-09T03:54:13.974Z",
+        "updatedAt": "2015-10-09T03:54:35.465Z"
+      },
+      {
+        "id": "d9dc23ea-837d-4b52-8d4a-8402cb242147",
+        "name": "拜访统计",
+        "url": "index.visit",
+        "meta": {},
+        "code": "visit",
+        "platform": "547fa184-7689-4ecd-bb79-3106ae623271",
+        "parent": "8fa594ac-6786-4229-9bc6-4e16e114ed0e",
+        "createdAt": "2015-10-09T03:54:48.578Z",
+        "updatedAt": "2015-10-09T03:55:52.690Z"
+      },
+      {
+        "id": "0fae71c9-fc2c-4be6-aa93-1cebe4949f36",
+        "name": "工具",
+        "url": "index.mian",
+        "meta": {},
+        "code": "tools",
+        "platform": "547fa184-7689-4ecd-bb79-3106ae623271",
+        "createdAt": "2015-10-09T03:54:56.243Z",
+        "updatedAt": "2015-10-09T03:56:59.014Z"
+      },
+      {
+        "id": "a7764e0e-e528-439e-97b1-57e424e0ad67",
+        "name": "拜访明细",
+        "createdAt": "2015-10-09T03:56:03.928Z",
+        "updatedAt": "2015-10-09T03:56:03.928Z"
+      },
+      {
+        "id": "a3660fbc-a644-4a98-8675-e2cc3e7ce1e0",
+        "name": "营销组织",
+        "url": "index.area-files",
+        "meta": {},
+        "code": "area",
+        "platform": "547fa184-7689-4ecd-bb79-3106ae623271",
+        "parent": "0fae71c9-fc2c-4be6-aa93-1cebe4949f36",
+        "createdAt": "2015-10-09T03:57:12.359Z",
+        "updatedAt": "2015-10-13T02:59:33.442Z"
+      },
+      {
+        "id": "343bd389-6ee1-46ce-903a-5b34a5842478",
+        "name": "库存组织",
+        "url": "index.store-files",
+        "meta": {},
+        "code": "store-files",
+        "platform": "547fa184-7689-4ecd-bb79-3106ae623271",
+        "parent": "0fae71c9-fc2c-4be6-aa93-1cebe4949f36",
+        "createdAt": "2015-10-09T03:58:04.143Z",
+        "updatedAt": "2015-10-13T03:00:19.796Z"
+      },
+      {
+        "id": "e62f544c-2bcc-4c20-88fb-54f28afecfa7",
+        "name": "人员档案",
+        "url": "index.depart-files",
+        "meta": {},
+        "code": "depart",
+        "platform": "547fa184-7689-4ecd-bb79-3106ae623271",
+        "parent": "0fae71c9-fc2c-4be6-aa93-1cebe4949f36",
+        "createdAt": "2015-10-09T03:59:29.571Z",
+        "updatedAt": "2015-10-09T10:50:33.732Z"
+      },
+      {
+        "id": "59955c6e-ee54-43ea-b190-4a65ce3e3397",
+        "name": "产品档案",
+        "url": "index.product-files",
+        "meta": {},
+        "code": "product",
+        "platform": "547fa184-7689-4ecd-bb79-3106ae623271",
+        "parent": "0fae71c9-fc2c-4be6-aa93-1cebe4949f36",
+        "createdAt": "2015-10-09T04:00:18.048Z",
+        "updatedAt": "2015-10-09T04:00:59.880Z"
+      },
+      {
+        "id": "07761258-3396-483a-b6cb-d4f70554f87c",
+        "name": "产品属性",
+        "url": "index.product-property",
+        "meta": {},
+        "code": "property",
+        "platform": "547fa184-7689-4ecd-bb79-3106ae623271",
+        "parent": "0fae71c9-fc2c-4be6-aa93-1cebe4949f36",
+        "createdAt": "2015-10-09T04:01:31.344Z",
+        "updatedAt": "2015-10-09T04:02:08.020Z"
+      },
+      {
+        "id": "2485b303-aa22-4786-beed-8bb048e5f390",
+        "name": "公司配置",
+        "url": "index.basic-files",
+        "meta": {},
+        "code": "basic",
+        "platform": "547fa184-7689-4ecd-bb79-3106ae623271",
+        "parent": "0fae71c9-fc2c-4be6-aa93-1cebe4949f36",
+        "createdAt": "2015-10-09T04:03:36.035Z",
+        "updatedAt": "2015-10-09T04:39:46.499Z"
+      },
+      {
+        "id": "6a9f8931-8952-48d4-bcc3-736088c162f1",
+        "name": "客户档案",
+        "url": "index.customer-files",
+        "meta": {},
+        "code": "customer-files",
+        "platform": "547fa184-7689-4ecd-bb79-3106ae623271",
+        "parent": "0fae71c9-fc2c-4be6-aa93-1cebe4949f36",
+        "createdAt": "2015-10-09T04:40:01.150Z",
+        "updatedAt": "2015-10-09T04:40:45.227Z"
+      },
+      {
+        "id": "cc25b77c-18bf-4c00-abb3-ff5c62b9dafe",
+        "name": "期货应答",
+        "url": "index.future-reply",
+        "meta": {},
+        "code": "reply",
+        "platform": "547fa184-7689-4ecd-bb79-3106ae623271",
+        "parent": "dce708a8-3ca0-4b6c-b216-ba0b03f52dc2",
+        "createdAt": "2015-10-09T09:53:17.638Z",
+        "updatedAt": "2015-10-09T09:53:58.548Z"
+      },
+      {
+        "id": "2bf9579c-56fc-4b8f-aa55-68062c8fdc86",
+        "name": "采购",
+        "url": "index.main",
+        "meta": {},
+        "code": "buy",
+        "platform": "547fa184-7689-4ecd-bb79-3106ae623271",
+        "createdAt": "2015-10-09T10:33:58.164Z",
+        "updatedAt": "2015-10-15T01:28:06.902Z"
+      },
+      {
+        "id": "b42463d9-5e2d-4d4b-a9d6-d985095ec28b",
+        "name": "下达订单",
+        "url": "title.followproductlist",
+        "meta": {},
+        "code": "followproductlist",
+        "platform": "d35fc6b6-3b3a-4b96-b29e-b1fe15135782",
+        "createdAt": "2015-10-09T10:34:35.356Z",
+        "updatedAt": "2015-10-09T10:37:21.929Z"
+      },
+      {
+        "id": "122c4064-2956-4a8f-b197-6b12cbc494e2",
+        "name": "采购申请",
+        "url": "index.purchase",
+        "meta": {},
+        "code": "purchase",
+        "platform": "547fa184-7689-4ecd-bb79-3106ae623271",
+        "parent": "2bf9579c-56fc-4b8f-aa55-68062c8fdc86",
+        "createdAt": "2015-10-09T10:35:00.663Z",
+        "updatedAt": "2015-10-09T10:37:15.499Z"
+      },
+      {
+        "id": "a4264af8-d40e-4263-9e0a-b396f8cbbc57",
+        "name": "采购退货申请",
+        "url": "index.purchaseReturn",
+        "meta": {},
+        "code": "purchaseReturn",
+        "platform": "547fa184-7689-4ecd-bb79-3106ae623271",
+        "parent": "2bf9579c-56fc-4b8f-aa55-68062c8fdc86",
+        "createdAt": "2015-10-09T10:37:32.136Z",
+        "updatedAt": "2015-10-09T10:38:08.235Z"
+      },
+      {
+        "id": "c649b221-5e13-45a9-8095-5ad07d1a3e9a",
+        "name": "我的订单",
+        "url": "title.successList",
+        "meta": {},
+        "code": "successList",
+        "platform": "d35fc6b6-3b3a-4b96-b29e-b1fe15135782",
+        "createdAt": "2015-10-09T10:37:49.712Z",
+        "updatedAt": "2015-10-09T10:38:14.582Z"
+      },
+      {
+        "id": "1418bcad-8b84-4d79-8d8f-7763ceafdb22",
+        "name": "客户",
+        "url": "title.myCustomer.todetailcustomer",
+        "meta": {},
+        "code": "todetailcustomer",
+        "platform": "d35fc6b6-3b3a-4b96-b29e-b1fe15135782",
+        "createdAt": "2015-10-09T10:38:25.384Z",
+        "updatedAt": "2015-10-09T10:38:50.937Z"
+      },
+      {
+        "id": "d903ead1-1b15-40f4-beac-5b289e2591d8",
+        "name": "工作圈",
+        "createdAt": "2015-10-09T10:39:00.474Z",
+        "updatedAt": "2015-10-09T10:39:00.474Z"
+      },
+      {
+        "id": "c63e5bd5-1d91-487c-8edf-2f7d207155dc",
+        "name": "拜访",
+        "url": "title.myCustomer.tovisitcustomer",
+        "meta": {},
+        "code": "tovisitcustomer",
+        "platform": "d35fc6b6-3b3a-4b96-b29e-b1fe15135782",
+        "createdAt": "2015-10-09T10:40:43.705Z",
+        "updatedAt": "2015-10-09T10:41:11.821Z"
+      },
+      {
+        "id": "f9588865-e733-4dc0-816e-7659ab9a639a",
+        "name": "样品领用",
+        "url": "title.storeSelect.YPLYCK",
+        "meta": {},
+        "code": "yplyck",
+        "platform": "d35fc6b6-3b3a-4b96-b29e-b1fe15135782",
+        "createdAt": "2015-10-09T10:41:08.648Z",
+        "updatedAt": "2015-10-09T10:41:52.866Z"
+      },
+      {
+        "id": "f2bb4fde-554c-425e-b525-583eefc4fef5",
+        "name": "考勤",
+        "url": "attendencehome",
+        "meta": {},
+        "code": "attendencehome",
+        "platform": "d35fc6b6-3b3a-4b96-b29e-b1fe15135782",
+        "createdAt": "2015-10-09T10:41:23.602Z",
+        "updatedAt": "2015-10-09T10:41:45.037Z"
+      },
+      {
+        "id": "36a9c6b1-a502-4da6-92a3-48fe0b3b8106",
+        "name": "采集",
+        "url": "collecthome",
+        "meta": {},
+        "code": "collecthome",
+        "platform": "d35fc6b6-3b3a-4b96-b29e-b1fe15135782",
+        "createdAt": "2015-10-09T10:41:57.311Z",
+        "updatedAt": "2015-10-09T10:42:10.312Z"
+      },
+      {
+        "id": "9b7638b2-5433-4d6d-8d34-92668beb440d",
+        "name": "报废",
+        "url": "title.storeSelect.BFCK",
+        "meta": {},
+        "code": "bfck",
+        "platform": "d35fc6b6-3b3a-4b96-b29e-b1fe15135782",
+        "createdAt": "2015-10-09T10:42:07.232Z",
+        "updatedAt": "2015-10-09T10:42:38.384Z"
+      },
+      {
+        "id": "8c4a9f71-f800-42c0-a717-6f809f91e3ad",
+        "name": "计划",
+        "url": "title.constitute-plan",
+        "meta": {},
+        "code": "constitute-plan",
+        "platform": "d35fc6b6-3b3a-4b96-b29e-b1fe15135782",
+        "createdAt": "2015-10-09T10:42:21.664Z",
+        "updatedAt": "2015-10-09T10:42:37.520Z"
+      },
+      {
+        "id": "839c823b-c8cf-4680-a660-97343b2ab3dc",
+        "name": "任务",
+        "url": "title.constitute-assignment",
+        "meta": {},
+        "code": "constitute-assignment",
+        "platform": "d35fc6b6-3b3a-4b96-b29e-b1fe15135782",
+        "createdAt": "2015-10-09T10:42:47.018Z",
+        "updatedAt": "2015-10-09T10:43:03.864Z"
+      },
+      {
+        "id": "1d9ccacc-6298-4cd2-b869-5b517afe51e8",
+        "name": "生产下线",
+        "url": "title.storeSelect.SCXXCK",
+        "meta": {},
+        "code": "scxxck",
+        "platform": "d35fc6b6-3b3a-4b96-b29e-b1fe15135782",
+        "createdAt": "2015-10-09T10:42:53.891Z",
+        "updatedAt": "2015-10-09T10:43:22.445Z"
+      },
+      {
+        "id": "229a5ff1-b1ae-484e-adfd-a16d126af129",
+        "name": "打款",
+        "url": "title.myCustomer.tocomepayment",
+        "meta": {},
+        "code": "tocomepayment",
+        "platform": "d35fc6b6-3b3a-4b96-b29e-b1fe15135782",
+        "createdAt": "2015-10-09T10:43:17.353Z",
+        "updatedAt": "2015-10-09T10:43:34.584Z"
+      },
+      {
+        "id": "41b120d4-3596-4318-b287-e013342e1f3c",
+        "name": "生产领用",
+        "url": "title.drawBusiness",
+        "meta": {},
+        "code": "drawBusiness",
+        "platform": "d35fc6b6-3b3a-4b96-b29e-b1fe15135782",
+        "createdAt": "2015-10-09T10:43:37.537Z",
+        "updatedAt": "2015-10-09T10:44:13.363Z"
+      },
+      {
+        "id": "9f2d9b05-d6c0-4757-bbdb-f88292506d72",
+        "name": "业绩",
+        "createdAt": "2015-10-09T10:43:48.379Z",
+        "updatedAt": "2015-10-09T10:43:48.379Z"
+      },
+      {
+        "id": "786ceb2d-6174-405f-a10e-d1771c43ab26",
+        "name": "换包",
+        "url": "title.transferBusiness",
+        "meta": {},
+        "code": "transferBusiness",
+        "platform": "d35fc6b6-3b3a-4b96-b29e-b1fe15135782",
+        "createdAt": "2015-10-09T10:44:32.699Z",
+        "updatedAt": "2015-10-09T10:44:59.329Z"
+      },
+      {
+        "id": "03b8f7d1-a2c0-431a-b1f2-0fe6695872dc",
+        "name": "采购",
+        "url": "title.supplierBusiness",
+        "meta": {},
+        "code": "supplierBusiness",
+        "platform": "d35fc6b6-3b3a-4b96-b29e-b1fe15135782",
+        "createdAt": "2015-10-09T10:44:36.800Z",
+        "updatedAt": "2015-10-09T10:45:01.086Z"
+      },
+      {
+        "id": "4fd047cd-8857-4b34-8d9d-ee513051822e",
+        "name": "销售",
+        "url": "title.saleBusiness",
+        "meta": {},
+        "code": "saleBusiness",
+        "platform": "d35fc6b6-3b3a-4b96-b29e-b1fe15135782",
+        "createdAt": "2015-10-09T10:45:43.177Z",
+        "updatedAt": "2015-10-09T10:48:01.647Z"
+      },
+      {
+        "id": "aca6d4b8-1a60-48ac-b57d-d3fae3467723",
+        "name": "盘点",
+        "url": "title.checkBusiness",
+        "meta": {},
+        "code": "checkBusiness",
+        "platform": "d35fc6b6-3b3a-4b96-b29e-b1fe15135782",
+        "createdAt": "2015-10-09T10:47:51.365Z",
+        "updatedAt": "2015-10-09T10:48:19.678Z"
+      },
+      {
+        "id": "807fd18d-f983-4183-9ebd-07b5fa908a1c",
+        "name": "调拨",
+        "url": "title.allotBusiness",
+        "meta": {},
+        "code": "allotBusiness",
+        "platform": "d35fc6b6-3b3a-4b96-b29e-b1fe15135782",
+        "createdAt": "2015-10-09T10:48:19.236Z",
+        "updatedAt": "2015-10-09T10:48:50.798Z"
+      },
+      {
+        "id": "9883cef1-3d7d-4515-baad-6bf4b8ebd7d8",
+        "name": "生产车间",
+        "url": "index.profactory-files",
+        "meta": {},
+        "code": "profactory-files",
+        "platform": "547fa184-7689-4ecd-bb79-3106ae623271",
+        "parent": "0fae71c9-fc2c-4be6-aa93-1cebe4949f36",
+        "createdAt": "2015-10-15T01:29:56.136Z",
+        "updatedAt": "2015-10-15T01:31:42.105Z"
+      }
+    ],
+    "platform": [
+      {
+        "id": "d35fc6b6-3b3a-4b96-b29e-b1fe15135782",
+        "name": "手机端",
+        "code": "mobile",
+        "createdAt": "2015-09-17T10:18:21.060Z",
+        "updatedAt": "2015-09-17T10:18:25.750Z"
+      },
+      {
+        "id": "547fa184-7689-4ecd-bb79-3106ae623271",
+        "name": "WEB端",
+        "code": "web",
+        "createdAt": "2015-09-17T10:18:42.090Z",
+        "updatedAt": "2015-09-17T10:18:45.442Z"
+      },
+      {
+        "id": "702b7e99-0ecc-44a0-b727-fdb94d4773fa",
+        "name": "微信端",
+        "code": "wechat",
+        "createdAt": "2015-09-17T10:19:02.193Z",
+        "updatedAt": "2015-09-17T10:19:06.797Z"
+      },
+      {
+        "id": "ba51a0bc-2e7f-4253-8202-6b4b2a818a71",
+        "name": "按钮",
+        "code": "button",
+        "createdAt": "2015-09-28T04:01:54.969Z",
+        "updatedAt": "2015-09-28T04:02:00.152Z"
+      }
+    ],
+    "role": [
+      {
+        "id": "28d92a9d-a3e8-40c4-9271-ee38ded10035",
+        "name": "业务代表",
+        "code": "Business",
+        "createdAt": "2015-09-23T08:07:56.158Z",
+        "updatedAt": "2015-09-30T10:05:25.685Z"
+      },
+      {
+        "id": "3dbda2da-b75a-42b4-b6e7-831a9b6a896c",
+        "name": "发运",
+        "code": "Shipping",
+        "createdAt": "2015-09-23T08:09:13.591Z",
+        "updatedAt": "2015-09-25T03:13:59.261Z"
+      },
+      {
+        "id": "a42395ee-e438-4fc5-a45b-c610c3313f20",
+        "name": "库管",
+        "code": "Warehouse",
+        "createdAt": "2015-09-23T08:56:01.082Z",
+        "updatedAt": "2015-09-25T02:45:10.436Z"
+      },
+      {
+        "id": "765d7bea-0d0c-4755-9f31-0ab28d0c9472",
+        "name": "领导",
+        "code": "Leader",
+        "createdAt": "2015-09-25T02:41:36.323Z",
+        "updatedAt": "2015-09-25T02:44:53.771Z"
+      },
+      {
+        "id": "cbd65c2d-c5f9-42cf-9aa0-39b27ebf1271",
+        "name": "调度",
+        "code": "Dispatch",
+        "createdAt": "2015-09-25T02:44:10.739Z",
+        "updatedAt": "2015-09-25T02:45:20.985Z"
+      },
+      {
+        "id": "94753106-4910-407d-874a-187e964be1e5",
+        "name": "财务",
+        "code": "TreasuryAttache",
+        "createdAt": "2015-09-25T02:45:53.404Z",
+        "updatedAt": "2015-09-25T02:47:43.054Z"
+      },
+      {
+        "id": "6df65672-dde1-4039-8fde-6e5d774cb5da",
+        "name": "采购",
+        "code": "PurchasingSpecialist",
+        "createdAt": "2015-09-25T02:47:58.988Z",
+        "updatedAt": "2015-09-25T02:48:35.156Z"
+      },
+      {
+        "id": "661a89ca-0c12-4f53-8bf6-7e38a90e091c",
+        "name": "系统管理员",
+        "code": "Administrator",
+        "createdAt": "2015-09-25T02:54:40.365Z",
+        "updatedAt": "2015-10-09T02:26:40.479Z"
+      },
+      {
+        "id": "0e3c8b7d-b93e-4a4b-83af-6199566b0fe6",
+        "name": "市场",
+        "code": "MarketingSpecialist",
+        "createdAt": "2015-09-25T02:55:20.327Z",
+        "updatedAt": "2015-09-25T02:55:27.113Z"
+      },
+      {
+        "id": "2623f0ce-431d-4795-ba55-ad9e3a916135",
+        "name": "人事",
+        "code": "HRSpecialist",
+        "createdAt": "2015-09-25T02:56:06.693Z",
+        "updatedAt": "2015-09-25T02:56:15.636Z"
+      }
+    ],
+    "user": [
+      {
+        "id": "null",
+        "createdAt": "2015-09-23T08:02:50.951Z",
+        "updatedAt": "2015-09-23T08:02:50.951Z"
+      },
+      {
+        "id": "e8b35d54-3864-4a4b-a36a-36c057031dfe",
+        "createdAt": "2015-09-23T08:09:01.828Z",
+        "updatedAt": "2015-10-13T02:57:09.759Z"
+      },
+      {
+        "id": "2ad53a02-a9b9-4111-8422-6c5a6e30b8f2",
+        "createdAt": "2015-09-23T08:09:52.218Z",
+        "updatedAt": "2015-09-30T08:24:09.638Z"
+      },
+      {
+        "id": "120e965b-f389-416e-bded-227aed9b5791",
+        "createdAt": "2015-09-23T08:12:16.070Z",
+        "updatedAt": "2015-09-23T08:12:41.828Z"
+      },
+      {
+        "id": "1a4b520a-d2a0-4c26-a694-d439f00137c5",
+        "createdAt": "2015-09-23T08:16:01.312Z",
+        "updatedAt": "2015-09-23T08:19:22.087Z"
+      },
+      {
+        "id": "23453c7b-692a-4960-8e90-aa1c72be4c56",
+        "createdAt": "2015-09-23T08:42:31.385Z",
+        "updatedAt": "2015-09-23T08:42:31.385Z"
+      },
+      {
+        "id": "e62d268b-8fae-4d5c-a2f4-8bb7285037fc",
+        "createdAt": "2015-09-23T10:26:17.132Z",
+        "updatedAt": "2015-09-23T10:26:27.725Z"
+      },
+      {
+        "id": "3c6bf872-0b39-43a5-8b87-ebd8dbeb8dbb",
+        "createdAt": "2015-09-23T10:33:17.871Z",
+        "updatedAt": "2015-09-23T11:44:44.369Z"
+      },
+      {
+        "id": "d154db4d-ef28-4bb8-a3b2-5f3eb62c1bb3",
+        "createdAt": "2015-09-24T03:13:47.391Z",
+        "updatedAt": "2015-09-24T03:13:47.421Z"
+      },
+      {
+        "id": "fab31281-62e0-42f1-aefd-5d6a3457f861",
+        "createdAt": "2015-09-24T06:26:02.657Z",
+        "updatedAt": "2015-09-24T06:26:02.669Z"
+      },
+      {
+        "id": "2b53d86b-daf8-4b5e-96af-d052b0d3131f",
+        "createdAt": "2015-09-24T08:07:29.999Z",
+        "updatedAt": "2015-10-09T02:27:28.902Z"
+      },
+      {
+        "id": "d7131896-8f95-4712-a0de-367adad67413",
+        "createdAt": "2015-09-24T08:49:22.104Z",
+        "updatedAt": "2015-09-25T07:08:17.912Z"
+      },
+      {
+        "id": "67593179-0e25-4b6f-8246-fe1c37c30e13",
+        "createdAt": "2015-09-25T06:51:36.842Z",
+        "updatedAt": "2015-10-08T06:35:42.745Z"
+      },
+      {
+        "id": "81b02f0e-8133-455b-9636-4c5165fb4d98",
+        "createdAt": "2015-09-28T01:48:10.504Z",
+        "updatedAt": "2015-10-13T07:47:23.850Z"
+      },
+      {
+        "id": "d6323158-2138-427d-95c4-9bf7e977ae18",
+        "createdAt": "2015-09-28T09:41:15.308Z",
+        "updatedAt": "2015-10-10T05:39:09.486Z"
+      },
+      {
+        "id": "ea6900a8-7599-4fec-bcfc-2666acbf6480",
+        "createdAt": "2015-09-30T06:05:44.852Z",
+        "updatedAt": "2015-09-30T06:05:44.852Z"
+      },
+      {
+        "id": "bbf9fcb1-b0f9-4656-8ff6-16d600e95f50",
+        "createdAt": "2015-09-30T10:38:20.453Z",
+        "updatedAt": "2015-09-30T10:38:20.453Z"
+      },
+      {
+        "id": "3b337a02-4bae-45da-a9c9-65fea22848a4",
+        "createdAt": "2015-09-30T10:57:06.059Z",
+        "updatedAt": "2015-09-30T10:57:06.059Z"
+      },
+      {
+        "id": "2209bc9c-8f36-4ea5-8ed5-218444b08f65",
+        "createdAt": "2015-09-30T10:58:59.647Z",
+        "updatedAt": "2015-09-30T10:58:59.647Z"
+      },
+      {
+        "id": "08041c8b-659c-45c0-b3f7-9e36a3a0abb9",
+        "createdAt": "2015-09-30T10:59:54.061Z",
+        "updatedAt": "2015-09-30T10:59:54.061Z"
+      },
+      {
+        "id": "2cbc2975-4af7-46ce-bf77-601596fef1f2",
+        "createdAt": "2015-09-30T11:03:37.164Z",
+        "updatedAt": "2015-09-30T11:03:37.164Z"
+      },
+      {
+        "id": "74801e8a-7a5c-40d2-80d6-d206aa2e360e",
+        "createdAt": "2015-09-30T11:07:16.397Z",
+        "updatedAt": "2015-09-30T11:07:16.397Z"
+      },
+      {
+        "id": "e5bec9af-8780-4863-8e13-bb013ff9a9a0",
+        "createdAt": "2015-09-30T11:42:10.406Z",
+        "updatedAt": "2015-09-30T11:42:10.406Z"
+      },
+      {
+        "id": "00c0057e-6a55-4c2a-b297-deb0681fwebb",
+        "createdAt": "2015-10-08T05:58:14.837Z",
+        "updatedAt": "2015-10-08T05:58:14.892Z"
+      },
+      {
+        "id": "c434f57e-071d-455e-9a6f-c48db93db2b6",
+        "createdAt": "2015-10-08T06:15:24.673Z",
+        "updatedAt": "2015-10-08T06:15:24.754Z"
+      },
+      {
+        "id": "a83abef9-72ef-4d72-9876-8f17aac5fcb5",
+        "createdAt": "2015-10-08T08:52:53.933Z",
+        "updatedAt": "2015-10-08T08:52:53.933Z"
+      },
+      {
+        "id": "3b7a0d1d-f199-44c0-8cf8-ad5b82221bed",
+        "createdAt": "2015-10-08T09:34:26.538Z",
+        "updatedAt": "2015-10-08T09:34:26.538Z"
+      },
+      {
+        "id": "04e9ec1f-a233-49c8-a4d0-af17a40a30ba",
+        "createdAt": "2015-10-08T09:44:41.432Z",
+        "updatedAt": "2015-10-08T09:44:41.432Z"
+      },
+      {
+        "id": "d0a13895-8666-4c12-bdc8-07c9daaaed21",
+        "createdAt": "2015-10-08T09:48:12.505Z",
+        "updatedAt": "2015-10-08T09:48:12.511Z"
+      },
+      {
+        "id": "379b0ccb-7ccb-4168-aa8d-6e224313cdaa",
+        "createdAt": "2015-10-08T09:50:23.546Z",
+        "updatedAt": "2015-10-08T09:50:23.546Z"
+      },
+      {
+        "id": "ada3844d-08ca-4f20-9cb9-2cd9f352da86",
+        "createdAt": "2015-10-08T09:59:16.777Z",
+        "updatedAt": "2015-10-08T10:27:58.531Z"
+      },
+      {
+        "id": "75c86fe7-986a-4ba9-aca9-b25a6d7994ea",
+        "createdAt": "2015-10-08T10:16:03.537Z",
+        "updatedAt": "2015-10-08T10:44:56.822Z"
+      },
+      {
+        "id": "3dcb8801-04ce-4767-8932-74bf2824c8d3",
+        "createdAt": "2015-10-09T01:27:13.105Z",
+        "updatedAt": "2015-10-09T01:27:13.105Z"
+      },
+      {
+        "id": "f3a3870e-b101-4c1c-959e-f9bc91a745b1",
+        "createdAt": "2015-10-09T01:30:04.688Z",
+        "updatedAt": "2015-10-09T01:30:04.688Z"
+      },
+      {
+        "id": "a2773bec-b69e-40f6-a2bc-eded79a36826",
+        "createdAt": "2015-10-09T01:36:20.655Z",
+        "updatedAt": "2015-10-09T01:42:39.726Z"
+      },
+      {
+        "id": "537fcd05-0669-4916-89bb-57282f1c3270",
+        "createdAt": "2015-10-09T01:45:24.786Z",
+        "updatedAt": "2015-10-09T01:45:24.786Z"
+      },
+      {
+        "id": "9c5cf7e9-2ed0-4733-9b77-a310827f3391",
+        "createdAt": "2015-10-09T01:48:42.949Z",
+        "updatedAt": "2015-10-09T01:48:42.949Z"
+      },
+      {
+        "id": "58efff1e-47ec-48b6-a260-0cfe3b1367c9",
+        "createdAt": "2015-10-09T01:51:54.918Z",
+        "updatedAt": "2015-10-09T01:51:54.918Z"
+      },
+      {
+        "id": "8960549f-efd4-423e-87d4-0491568d6144",
+        "createdAt": "2015-10-09T01:54:51.538Z",
+        "updatedAt": "2015-10-09T01:54:51.622Z"
+      },
+      {
+        "id": "37befccf-474f-44e1-acdf-11bf0490565b",
+        "createdAt": "2015-10-09T01:54:55.254Z",
+        "updatedAt": "2015-10-09T01:54:55.254Z"
+      },
+      {
+        "id": "8bac3e8d-0f80-44d7-bc57-55f619ea4725",
+        "createdAt": "2015-10-09T02:02:56.234Z",
+        "updatedAt": "2015-10-09T02:02:56.797Z"
+      },
+      {
+        "id": "d487c128-621d-4e3a-9179-6b754c97f03a",
+        "createdAt": "2015-10-09T02:04:15.669Z",
+        "updatedAt": "2015-10-09T02:04:15.694Z"
+      },
+      {
+        "id": "ae606a34-99a5-495f-8a32-96b6c49d7de3",
+        "createdAt": "2015-10-09T02:23:07.531Z",
+        "updatedAt": "2015-10-09T02:23:07.555Z"
+      },
+      {
+        "id": "f408c785-4151-4b0a-b6e8-78007b004578",
+        "createdAt": "2015-10-09T10:53:37.920Z",
+        "updatedAt": "2015-10-09T10:56:06.200Z"
+      },
+      {
+        "id": "ce8b8412-f6a5-47a5-83c0-e0f3991de7b5",
+        "createdAt": "2015-10-10T02:53:52.851Z",
+        "updatedAt": "2015-10-10T02:53:52.851Z"
+      },
+      {
+        "id": "43f9aa2f-2cee-4244-a7fc-3cc2d916bf4f",
+        "createdAt": "2015-10-10T03:11:30.107Z",
+        "updatedAt": "2015-10-10T03:11:30.107Z"
+      },
+      {
+        "id": "0ce3ff28-ef49-4b4f-9b43-0946c8df921e",
+        "createdAt": "2015-10-10T03:14:02.847Z",
+        "updatedAt": "2015-10-10T03:14:02.847Z"
+      },
+      {
+        "id": "bae2fb0b-d2ad-403a-87eb-f799ecb7efe7",
+        "createdAt": "2015-10-10T03:20:12.034Z",
+        "updatedAt": "2015-10-10T03:20:12.087Z"
+      },
+      {
+        "id": "6095f4cd-1cbf-40de-bf76-bca52590382e",
+        "createdAt": "2015-10-10T03:47:44.409Z",
+        "updatedAt": "2015-10-10T03:47:44.449Z"
+      },
+      {
+        "id": "5bb1dca1-015e-446b-b582-655e048751e5",
+        "createdAt": "2015-10-12T06:49:50.418Z",
+        "updatedAt": "2015-10-14T06:15:40.113Z"
+      },
+      {
+        "id": "2d7084b1-a701-11e4-97b1-448a5b353255",
+        "createdAt": "2015-10-12T08:39:11.358Z",
+        "updatedAt": "2015-10-15T03:42:26.624Z"
+      },
+      {
+        "id": "8456c714-2f21-4487-8c84-071334ccc55a",
+        "createdAt": "2015-10-12T08:39:34.073Z",
+        "updatedAt": "2015-10-12T08:39:34.105Z"
+      },
+      {
+        "id": "481e06ea-f4e2-4bad-9163-e10cd51037a0",
+        "createdAt": "2015-10-12T08:39:59.098Z",
+        "updatedAt": "2015-10-12T08:39:59.143Z"
+      },
+      {
+        "id": "628da354-440f-4122-b987-c10b4f6637ed",
+        "createdAt": "2015-10-12T08:47:22.398Z",
+        "updatedAt": "2015-10-12T08:47:22.451Z"
+      },
+      {
+        "id": "0abcc3a5-fe16-4a68-8718-a5295628cd8a",
+        "createdAt": "2015-10-12T08:47:39.579Z",
+        "updatedAt": "2015-10-12T08:47:39.612Z"
+      },
+      {
+        "id": "a36a0279-1960-415d-a867-bbb4bafed286",
+        "createdAt": "2015-10-12T08:48:07.754Z",
+        "updatedAt": "2015-10-12T08:48:07.809Z"
+      },
+      {
+        "id": "a3e0e95d-7831-4b39-b048-cafe580690a0",
+        "createdAt": "2015-10-13T03:10:34.913Z",
+        "updatedAt": "2015-10-13T03:10:34.991Z"
+      },
+      {
+        "id": "da9721cd-aff2-4610-af4f-78f56d8def4e",
+        "createdAt": "2015-10-13T03:21:04.824Z",
+        "updatedAt": "2015-10-13T03:21:04.869Z"
+      },
+      {
+        "id": "d7fa35b0-7308-417d-abb4-924be74e3143",
+        "createdAt": "2015-10-13T03:36:35.805Z",
+        "updatedAt": "2015-10-13T03:36:35.873Z"
+      },
+      {
+        "id": "52fa3810-5a4e-4cbc-9f50-9149ea78834b",
+        "createdAt": "2015-10-13T03:41:21.487Z",
+        "updatedAt": "2015-10-14T09:15:33.258Z"
+      },
+      {
+        "id": "63c8250e-b41d-44d1-9edf-0579cfc25478",
+        "createdAt": "2015-10-13T07:37:40.956Z",
+        "updatedAt": "2015-10-13T07:37:41.125Z"
+      },
+      {
+        "id": "3f53c8c9-c4d3-40f2-994a-9238f605e230",
+        "createdAt": "2015-10-13T07:49:14.502Z",
+        "updatedAt": "2015-10-13T07:49:14.545Z"
+      },
+      {
+        "id": "e70f64a2-3583-426b-b5a9-d94540b549c4",
+        "createdAt": "2015-10-13T10:08:52.883Z",
+        "updatedAt": "2015-10-13T10:09:35.716Z"
+      },
+      {
+        "id": "8c8480ba-96e3-4e86-ae21-1182512fa5c8",
+        "createdAt": "2015-10-13T10:34:36.175Z",
+        "updatedAt": "2015-10-13T10:34:36.230Z"
+      },
+      {
+        "id": "02916fe5-ac5c-4ac3-8656-cb03a90d5b87",
+        "createdAt": "2015-10-13T10:34:43.945Z",
+        "updatedAt": "2015-10-13T10:34:43.975Z"
+      },
+      {
+        "id": "06837ec1-ec82-4570-b5bc-e8801780284f",
+        "createdAt": "2015-10-14T05:48:21.037Z",
+        "updatedAt": "2015-10-14T05:48:21.081Z"
+      },
+      {
+        "id": "a8a8c6c5-7cc9-41fd-bfc2-25f83fdcbc8f",
+        "createdAt": "2015-10-14T05:49:54.678Z",
+        "updatedAt": "2015-10-14T05:49:54.714Z"
+      },
+      {
+        "id": "6b4d8e81-0816-4b91-b4b4-6a128184a488",
+        "createdAt": "2015-10-14T05:50:27.098Z",
+        "updatedAt": "2015-10-14T05:50:27.137Z"
+      },
+      {
+        "id": "9062901a-7bad-401a-8c8f-58ccc8cddadc",
+        "createdAt": "2015-10-14T05:51:06.785Z",
+        "updatedAt": "2015-10-14T05:51:06.822Z"
+      },
+      {
+        "id": "36cfdbc8-9e76-4819-b1fb-d9ea820e6d32",
+        "createdAt": "2015-10-14T05:51:47.301Z",
+        "updatedAt": "2015-10-14T05:51:47.341Z"
+      }
+    ],
+    "permission_roles__role_permissions": [
+      {
+        "permission_roles": "bb9424ae-a9d0-4529-83f0-fe97b586ddbb",
+        "role_permissions": "28d92a9d-a3e8-40c4-9271-ee38ded10035",
+        "id": 85
+      },
+      {
+        "permission_roles": "45d378c9-87be-4ed6-af79-329c9bcaed41",
+        "role_permissions": "28d92a9d-a3e8-40c4-9271-ee38ded10035",
+        "id": 86
+      },
+      {
+        "role_permissions": "cbd65c2d-c5f9-42cf-9aa0-39b27ebf1271",
+        "permission_roles": "3bcc6b58-6c4d-44a3-aaad-8b39f629ca26",
+        "id": 132
+      },
+      {
+        "role_permissions": "661a89ca-0c12-4f53-8bf6-7e38a90e091c",
+        "permission_roles": "3bcc6b58-6c4d-44a3-aaad-8b39f629ca26",
+        "id": 133
+      },
+      {
+        "role_permissions": "0e3c8b7d-b93e-4a4b-83af-6199566b0fe6",
+        "permission_roles": "3bcc6b58-6c4d-44a3-aaad-8b39f629ca26",
+        "id": 134
+      },
+      {
+        "role_permissions": "661a89ca-0c12-4f53-8bf6-7e38a90e091c",
+        "permission_roles": "4d54140b-8732-423d-b761-520b440f9482",
+        "id": 135
+      },
+      {
+        "role_permissions": "cbd65c2d-c5f9-42cf-9aa0-39b27ebf1271",
+        "permission_roles": "4d54140b-8732-423d-b761-520b440f9482",
+        "id": 136
+      },
+      {
+        "role_permissions": "3dbda2da-b75a-42b4-b6e7-831a9b6a896c",
+        "permission_roles": "4d54140b-8732-423d-b761-520b440f9482",
+        "id": 137
+      },
+      {
+        "role_permissions": "661a89ca-0c12-4f53-8bf6-7e38a90e091c",
+        "permission_roles": "0c06f9b2-529b-45d9-9dd6-981791efc9c9",
+        "id": 138
+      },
+      {
+        "role_permissions": "3dbda2da-b75a-42b4-b6e7-831a9b6a896c",
+        "permission_roles": "0c06f9b2-529b-45d9-9dd6-981791efc9c9",
+        "id": 139
+      },
+      {
+        "role_permissions": "cbd65c2d-c5f9-42cf-9aa0-39b27ebf1271",
+        "permission_roles": "0c06f9b2-529b-45d9-9dd6-981791efc9c9",
+        "id": 140
+      },
+      {
+        "role_permissions": "661a89ca-0c12-4f53-8bf6-7e38a90e091c",
+        "permission_roles": "c9cef495-d61f-49eb-b8e9-d7ee4bed742b",
+        "id": 141
+      },
+      {
+        "role_permissions": "0e3c8b7d-b93e-4a4b-83af-6199566b0fe6",
+        "permission_roles": "c9cef495-d61f-49eb-b8e9-d7ee4bed742b",
+        "id": 142
+      },
+      {
+        "role_permissions": "661a89ca-0c12-4f53-8bf6-7e38a90e091c",
+        "permission_roles": "0805f0d9-83a9-4126-aa9f-a41e0252920b",
+        "id": 143
+      },
+      {
+        "role_permissions": "0e3c8b7d-b93e-4a4b-83af-6199566b0fe6",
+        "permission_roles": "0805f0d9-83a9-4126-aa9f-a41e0252920b",
+        "id": 144
+      },
+      {
+        "role_permissions": "661a89ca-0c12-4f53-8bf6-7e38a90e091c",
+        "permission_roles": "dce708a8-3ca0-4b6c-b216-ba0b03f52dc2",
+        "id": 145
+      },
+      {
+        "role_permissions": "3dbda2da-b75a-42b4-b6e7-831a9b6a896c",
+        "permission_roles": "dce708a8-3ca0-4b6c-b216-ba0b03f52dc2",
+        "id": 146
+      },
+      {
+        "role_permissions": "cbd65c2d-c5f9-42cf-9aa0-39b27ebf1271",
+        "permission_roles": "dce708a8-3ca0-4b6c-b216-ba0b03f52dc2",
+        "id": 147
+      },
+      {
+        "role_permissions": "661a89ca-0c12-4f53-8bf6-7e38a90e091c",
+        "permission_roles": "a443ab82-8652-47bd-ba85-6041f1b6bafb",
+        "id": 148
+      },
+      {
+        "role_permissions": "661a89ca-0c12-4f53-8bf6-7e38a90e091c",
+        "permission_roles": "c28833f4-1ca2-4c17-9219-09d79510c9a4",
+        "id": 170
+      },
+      {
+        "role_permissions": "661a89ca-0c12-4f53-8bf6-7e38a90e091c",
+        "permission_roles": "25e648a8-1eac-4309-bc4a-6e2b2cb2f451",
+        "id": 177
+      },
+      {
+        "role_permissions": "661a89ca-0c12-4f53-8bf6-7e38a90e091c",
+        "permission_roles": "f8b25671-e210-4054-847a-e275a73eb830",
+        "id": 178
+      },
+      {
+        "role_permissions": "661a89ca-0c12-4f53-8bf6-7e38a90e091c",
+        "permission_roles": "3d81036a-3c1b-4a9c-b347-85daa35a1e17",
+        "id": 184
+      },
+      {
+        "role_permissions": "661a89ca-0c12-4f53-8bf6-7e38a90e091c",
+        "permission_roles": "10fadccc-8e26-41cb-a249-45c30ee3453b",
+        "id": 185
+      },
+      {
+        "role_permissions": "661a89ca-0c12-4f53-8bf6-7e38a90e091c",
+        "permission_roles": "09d7cb88-7d4b-433c-85da-d596c03f1e7b",
+        "id": 187
+      },
+      {
+        "role_permissions": "661a89ca-0c12-4f53-8bf6-7e38a90e091c",
+        "permission_roles": "40ecbfea-c8ce-414a-b652-b45b94e72196",
+        "id": 188
+      },
+      {
+        "role_permissions": "661a89ca-0c12-4f53-8bf6-7e38a90e091c",
+        "permission_roles": "a8bca184-d758-4761-bf7b-ebe177647323",
+        "id": 189
+      },
+      {
+        "role_permissions": "661a89ca-0c12-4f53-8bf6-7e38a90e091c",
+        "permission_roles": "2dc76c97-7a71-4a03-a213-bb7ee410b3b3",
+        "id": 190
+      },
+      {
+        "role_permissions": "661a89ca-0c12-4f53-8bf6-7e38a90e091c",
+        "permission_roles": "74b4bdf2-08e4-4db2-8b8d-e15093344fbd",
+        "id": 192
+      },
+      {
+        "role_permissions": "661a89ca-0c12-4f53-8bf6-7e38a90e091c",
+        "permission_roles": "0939a68c-1be4-4d7d-ad26-99f8f17f1e07",
+        "id": 193
+      },
+      {
+        "role_permissions": "3dbda2da-b75a-42b4-b6e7-831a9b6a896c",
+        "permission_roles": "0939a68c-1be4-4d7d-ad26-99f8f17f1e07",
+        "id": 194
+      },
+      {
+        "role_permissions": "a42395ee-e438-4fc5-a45b-c610c3313f20",
+        "permission_roles": "0939a68c-1be4-4d7d-ad26-99f8f17f1e07",
+        "id": 195
+      },
+      {
+        "role_permissions": "661a89ca-0c12-4f53-8bf6-7e38a90e091c",
+        "permission_roles": "88154f0a-428d-48af-bb6c-849ac4fa9c66",
+        "id": 196
+      },
+      {
+        "role_permissions": "661a89ca-0c12-4f53-8bf6-7e38a90e091c",
+        "permission_roles": "38a64e00-deb4-4924-809a-e665df849ae8",
+        "id": 197
+      },
+      {
+        "role_permissions": "661a89ca-0c12-4f53-8bf6-7e38a90e091c",
+        "permission_roles": "c49ccb5e-6f1e-4df6-9cdb-88beb1f7aa46",
+        "id": 198
+      },
+      {
+        "role_permissions": "a42395ee-e438-4fc5-a45b-c610c3313f20",
+        "permission_roles": "c49ccb5e-6f1e-4df6-9cdb-88beb1f7aa46",
+        "id": 199
+      },
+      {
+        "role_permissions": "661a89ca-0c12-4f53-8bf6-7e38a90e091c",
+        "permission_roles": "70a68d9f-723c-4724-a104-f89b29dc4aeb",
+        "id": 200
+      },
+      {
+        "role_permissions": "661a89ca-0c12-4f53-8bf6-7e38a90e091c",
+        "permission_roles": "5a0837c1-51c5-427d-a3f3-dfa053af1d81",
+        "id": 202
+      },
+      {
+        "role_permissions": "a42395ee-e438-4fc5-a45b-c610c3313f20",
+        "permission_roles": "5a0837c1-51c5-427d-a3f3-dfa053af1d81",
+        "id": 203
+      },
+      {
+        "role_permissions": "661a89ca-0c12-4f53-8bf6-7e38a90e091c",
+        "permission_roles": "f66ebb08-aeeb-4e3f-83dd-393e9db10a96",
+        "id": 204
+      },
+      {
+        "role_permissions": "661a89ca-0c12-4f53-8bf6-7e38a90e091c",
+        "permission_roles": "f93e818a-a776-4f77-b69e-091bf41f095c",
+        "id": 205
+      },
+      {
+        "role_permissions": "a42395ee-e438-4fc5-a45b-c610c3313f20",
+        "permission_roles": "3591b9de-d2a9-4642-a5c8-d1f4f13087ac",
+        "id": 208
+      },
+      {
+        "role_permissions": "661a89ca-0c12-4f53-8bf6-7e38a90e091c",
+        "permission_roles": "3591b9de-d2a9-4642-a5c8-d1f4f13087ac",
+        "id": 209
+      },
+      {
+        "role_permissions": "661a89ca-0c12-4f53-8bf6-7e38a90e091c",
+        "permission_roles": "6a76847f-beac-497e-b361-5b80bd83e329",
+        "id": 210
+      },
+      {
+        "role_permissions": "661a89ca-0c12-4f53-8bf6-7e38a90e091c",
+        "permission_roles": "d9dc23ea-837d-4b52-8d4a-8402cb242147",
+        "id": 211
+      },
+      {
+        "role_permissions": "661a89ca-0c12-4f53-8bf6-7e38a90e091c",
+        "permission_roles": "0fae71c9-fc2c-4be6-aa93-1cebe4949f36",
+        "id": 212
+      },
+      {
+        "role_permissions": "0e3c8b7d-b93e-4a4b-83af-6199566b0fe6",
+        "permission_roles": "0fae71c9-fc2c-4be6-aa93-1cebe4949f36",
+        "id": 213
+      },
+      {
+        "role_permissions": "765d7bea-0d0c-4755-9f31-0ab28d0c9472",
+        "permission_roles": "0fae71c9-fc2c-4be6-aa93-1cebe4949f36",
+        "id": 214
+      },
+      {
+        "role_permissions": "661a89ca-0c12-4f53-8bf6-7e38a90e091c",
+        "permission_roles": "53777831-8c16-4292-9f4e-cc0a87d848dd",
+        "id": 219
+      },
+      {
+        "role_permissions": "661a89ca-0c12-4f53-8bf6-7e38a90e091c",
+        "permission_roles": "59955c6e-ee54-43ea-b190-4a65ce3e3397",
+        "id": 223
+      },
+      {
+        "role_permissions": "765d7bea-0d0c-4755-9f31-0ab28d0c9472",
+        "permission_roles": "59955c6e-ee54-43ea-b190-4a65ce3e3397",
+        "id": 224
+      },
+      {
+        "role_permissions": "661a89ca-0c12-4f53-8bf6-7e38a90e091c",
+        "permission_roles": "07761258-3396-483a-b6cb-d4f70554f87c",
+        "id": 225
+      },
+      {
+        "role_permissions": "765d7bea-0d0c-4755-9f31-0ab28d0c9472",
+        "permission_roles": "07761258-3396-483a-b6cb-d4f70554f87c",
+        "id": 226
+      },
+      {
+        "role_permissions": "661a89ca-0c12-4f53-8bf6-7e38a90e091c",
+        "permission_roles": "2485b303-aa22-4786-beed-8bb048e5f390",
+        "id": 227
+      },
+      {
+        "role_permissions": "765d7bea-0d0c-4755-9f31-0ab28d0c9472",
+        "permission_roles": "2485b303-aa22-4786-beed-8bb048e5f390",
+        "id": 228
+      },
+      {
+        "role_permissions": "661a89ca-0c12-4f53-8bf6-7e38a90e091c",
+        "permission_roles": "6a9f8931-8952-48d4-bcc3-736088c162f1",
+        "id": 229
+      },
+      {
+        "role_permissions": "765d7bea-0d0c-4755-9f31-0ab28d0c9472",
+        "permission_roles": "6a9f8931-8952-48d4-bcc3-736088c162f1",
+        "id": 230
+      },
+      {
+        "role_permissions": "661a89ca-0c12-4f53-8bf6-7e38a90e091c",
+        "permission_roles": "20d8dd8e-afe0-4a3d-8dc1-a15e32b054e8",
+        "id": 264
+      },
+      {
+        "role_permissions": "661a89ca-0c12-4f53-8bf6-7e38a90e091c",
+        "permission_roles": "cc25b77c-18bf-4c00-abb3-ff5c62b9dafe",
+        "id": 296
+      },
+      {
+        "role_permissions": "3dbda2da-b75a-42b4-b6e7-831a9b6a896c",
+        "permission_roles": "cc25b77c-18bf-4c00-abb3-ff5c62b9dafe",
+        "id": 297
+      },
+      {
+        "role_permissions": "661a89ca-0c12-4f53-8bf6-7e38a90e091c",
+        "permission_roles": "1f45e4ea-2d8e-46cb-8d32-5f255f4722d4",
+        "id": 299
+      },
+      {
+        "role_permissions": "661a89ca-0c12-4f53-8bf6-7e38a90e091c",
+        "permission_roles": "5ac614e8-3e61-47be-bd31-425558bb455b",
+        "id": 307
+      },
+      {
+        "role_permissions": "661a89ca-0c12-4f53-8bf6-7e38a90e091c",
+        "permission_roles": "843b678c-dab6-4504-a2db-48e7bb2211f6",
+        "id": 309
+      },
+      {
+        "role_permissions": "661a89ca-0c12-4f53-8bf6-7e38a90e091c",
+        "permission_roles": "1598acc1-1435-48e7-8bc4-0e3b5d5efddc",
+        "id": 310
+      },
+      {
+        "role_permissions": "661a89ca-0c12-4f53-8bf6-7e38a90e091c",
+        "permission_roles": "122c4064-2956-4a8f-b197-6b12cbc494e2",
+        "id": 313
+      },
+      {
+        "role_permissions": "28d92a9d-a3e8-40c4-9271-ee38ded10035",
+        "permission_roles": "b42463d9-5e2d-4d4b-a9d6-d985095ec28b",
+        "id": 314
+      },
+      {
+        "role_permissions": "661a89ca-0c12-4f53-8bf6-7e38a90e091c",
+        "permission_roles": "a4264af8-d40e-4263-9e0a-b396f8cbbc57",
+        "id": 315
+      },
+      {
+        "role_permissions": "28d92a9d-a3e8-40c4-9271-ee38ded10035",
+        "permission_roles": "c649b221-5e13-45a9-8095-5ad07d1a3e9a",
+        "id": 316
+      },
+      {
+        "role_permissions": "28d92a9d-a3e8-40c4-9271-ee38ded10035",
+        "permission_roles": "1418bcad-8b84-4d79-8d8f-7763ceafdb22",
+        "id": 317
+      },
+      {
+        "role_permissions": "28d92a9d-a3e8-40c4-9271-ee38ded10035",
+        "permission_roles": "c63e5bd5-1d91-487c-8edf-2f7d207155dc",
+        "id": 330
+      },
+      {
+        "role_permissions": "28d92a9d-a3e8-40c4-9271-ee38ded10035",
+        "permission_roles": "f2bb4fde-554c-425e-b525-583eefc4fef5",
+        "id": 331
+      },
+      {
+        "role_permissions": "a42395ee-e438-4fc5-a45b-c610c3313f20",
+        "permission_roles": "f9588865-e733-4dc0-816e-7659ab9a639a",
+        "id": 332
+      },
+      {
+        "role_permissions": "28d92a9d-a3e8-40c4-9271-ee38ded10035",
+        "permission_roles": "36a9c6b1-a502-4da6-92a3-48fe0b3b8106",
+        "id": 333
+      },
+      {
+        "role_permissions": "28d92a9d-a3e8-40c4-9271-ee38ded10035",
+        "permission_roles": "8c4a9f71-f800-42c0-a717-6f809f91e3ad",
+        "id": 334
+      },
+      {
+        "role_permissions": "a42395ee-e438-4fc5-a45b-c610c3313f20",
+        "permission_roles": "9b7638b2-5433-4d6d-8d34-92668beb440d",
+        "id": 335
+      },
+      {
+        "role_permissions": "28d92a9d-a3e8-40c4-9271-ee38ded10035",
+        "permission_roles": "839c823b-c8cf-4680-a660-97343b2ab3dc",
+        "id": 336
+      },
+      {
+        "role_permissions": "a42395ee-e438-4fc5-a45b-c610c3313f20",
+        "permission_roles": "1d9ccacc-6298-4cd2-b869-5b517afe51e8",
+        "id": 337
+      },
+      {
+        "role_permissions": "28d92a9d-a3e8-40c4-9271-ee38ded10035",
+        "permission_roles": "229a5ff1-b1ae-484e-adfd-a16d126af129",
+        "id": 338
+      },
+      {
+        "role_permissions": "a42395ee-e438-4fc5-a45b-c610c3313f20",
+        "permission_roles": "41b120d4-3596-4318-b287-e013342e1f3c",
+        "id": 339
+      },
+      {
+        "role_permissions": "a42395ee-e438-4fc5-a45b-c610c3313f20",
+        "permission_roles": "786ceb2d-6174-405f-a10e-d1771c43ab26",
+        "id": 340
+      },
+      {
+        "role_permissions": "a42395ee-e438-4fc5-a45b-c610c3313f20",
+        "permission_roles": "03b8f7d1-a2c0-431a-b1f2-0fe6695872dc",
+        "id": 341
+      },
+      {
+        "role_permissions": "a42395ee-e438-4fc5-a45b-c610c3313f20",
+        "permission_roles": "4fd047cd-8857-4b34-8d9d-ee513051822e",
+        "id": 342
+      },
+      {
+        "role_permissions": "a42395ee-e438-4fc5-a45b-c610c3313f20",
+        "permission_roles": "aca6d4b8-1a60-48ac-b57d-d3fae3467723",
+        "id": 343
+      },
+      {
+        "role_permissions": "a42395ee-e438-4fc5-a45b-c610c3313f20",
+        "permission_roles": "807fd18d-f983-4183-9ebd-07b5fa908a1c",
+        "id": 344
+      },
+      {
+        "role_permissions": "28d92a9d-a3e8-40c4-9271-ee38ded10035",
+        "permission_roles": "82b51fe3-96fb-4924-877d-13d1ecfcece4",
+        "id": 345
+      },
+      {
+        "role_permissions": "661a89ca-0c12-4f53-8bf6-7e38a90e091c",
+        "permission_roles": "82b51fe3-96fb-4924-877d-13d1ecfcece4",
+        "id": 346
+      },
+      {
+        "role_permissions": "661a89ca-0c12-4f53-8bf6-7e38a90e091c",
+        "permission_roles": "7ec0d9ba-9941-4263-88ac-0321242132ac",
+        "id": 347
+      },
+      {
+        "role_permissions": "28d92a9d-a3e8-40c4-9271-ee38ded10035",
+        "permission_roles": "7ec0d9ba-9941-4263-88ac-0321242132ac",
+        "id": 348
+      },
+      {
+        "role_permissions": "765d7bea-0d0c-4755-9f31-0ab28d0c9472",
+        "permission_roles": "e62f544c-2bcc-4c20-88fb-54f28afecfa7",
+        "id": 349
+      },
+      {
+        "role_permissions": "661a89ca-0c12-4f53-8bf6-7e38a90e091c",
+        "permission_roles": "e62f544c-2bcc-4c20-88fb-54f28afecfa7",
+        "id": 350
+      },
+      {
+        "role_permissions": "661a89ca-0c12-4f53-8bf6-7e38a90e091c",
+        "permission_roles": "a3660fbc-a644-4a98-8675-e2cc3e7ce1e0",
+        "id": 355
+      },
+      {
+        "role_permissions": "661a89ca-0c12-4f53-8bf6-7e38a90e091c",
+        "permission_roles": "343bd389-6ee1-46ce-903a-5b34a5842478",
+        "id": 356
+      },
+      {
+        "role_permissions": "661a89ca-0c12-4f53-8bf6-7e38a90e091c",
+        "permission_roles": "2bf9579c-56fc-4b8f-aa55-68062c8fdc86",
+        "id": 357
+      },
+      {
+        "role_permissions": "661a89ca-0c12-4f53-8bf6-7e38a90e091c",
+        "permission_roles": "9883cef1-3d7d-4515-baad-6bf4b8ebd7d8",
+        "id": 358
+      },
+      {
+        "role_permissions": "3dbda2da-b75a-42b4-b6e7-831a9b6a896c",
+        "permission_roles": "8df1e428-2f5d-40d0-af4a-95eb0da29c8f",
+        "id": 367
+      },
+      {
+        "role_permissions": "cbd65c2d-c5f9-42cf-9aa0-39b27ebf1271",
+        "permission_roles": "8df1e428-2f5d-40d0-af4a-95eb0da29c8f",
+        "id": 368
+      },
+      {
+        "role_permissions": "661a89ca-0c12-4f53-8bf6-7e38a90e091c",
+        "permission_roles": "8df1e428-2f5d-40d0-af4a-95eb0da29c8f",
+        "id": 369
+      },
+      {
+        "role_permissions": "3dbda2da-b75a-42b4-b6e7-831a9b6a896c",
+        "permission_roles": "f91cc47c-b184-4d1f-86d1-618e9300339c",
+        "id": 370
+      },
+      {
+        "role_permissions": "765d7bea-0d0c-4755-9f31-0ab28d0c9472",
+        "permission_roles": "f91cc47c-b184-4d1f-86d1-618e9300339c",
+        "id": 371
+      },
+      {
+        "role_permissions": "cbd65c2d-c5f9-42cf-9aa0-39b27ebf1271",
+        "permission_roles": "f91cc47c-b184-4d1f-86d1-618e9300339c",
+        "id": 372
+      },
+      {
+        "role_permissions": "94753106-4910-407d-874a-187e964be1e5",
+        "permission_roles": "f91cc47c-b184-4d1f-86d1-618e9300339c",
+        "id": 373
+      },
+      {
+        "role_permissions": "6df65672-dde1-4039-8fde-6e5d774cb5da",
+        "permission_roles": "f91cc47c-b184-4d1f-86d1-618e9300339c",
+        "id": 374
+      },
+      {
+        "role_permissions": "661a89ca-0c12-4f53-8bf6-7e38a90e091c",
+        "permission_roles": "f91cc47c-b184-4d1f-86d1-618e9300339c",
+        "id": 375
+      },
+      {
+        "role_permissions": "0e3c8b7d-b93e-4a4b-83af-6199566b0fe6",
+        "permission_roles": "f91cc47c-b184-4d1f-86d1-618e9300339c",
+        "id": 376
+      },
+      {
+        "role_permissions": "2623f0ce-431d-4795-ba55-ad9e3a916135",
+        "permission_roles": "f91cc47c-b184-4d1f-86d1-618e9300339c",
+        "id": 377
+      },
+      {
+        "role_permissions": "661a89ca-0c12-4f53-8bf6-7e38a90e091c",
+        "permission_roles": "9e50e03d-8a4e-44c1-8f0e-8799b9ba3b0c",
+        "id": 378
+      },
+      {
+        "role_permissions": "661a89ca-0c12-4f53-8bf6-7e38a90e091c",
+        "permission_roles": "6da42789-f85b-442e-957c-653f25832275",
+        "id": 379
+      },
+      {
+        "role_permissions": "661a89ca-0c12-4f53-8bf6-7e38a90e091c",
+        "permission_roles": "f6e3d884-8231-4940-9586-a358961dede1",
+        "id": 380
+      },
+      {
+        "role_permissions": "661a89ca-0c12-4f53-8bf6-7e38a90e091c",
+        "permission_roles": "031a32f0-63dc-4f9a-ae20-81886246f5e3",
+        "id": 381
+      },
+      {
+        "role_permissions": "661a89ca-0c12-4f53-8bf6-7e38a90e091c",
+        "permission_roles": "12df065a-6728-43ac-8191-f39f42432b4c",
+        "id": 382
+      },
+      {
+        "role_permissions": "661a89ca-0c12-4f53-8bf6-7e38a90e091c",
+        "permission_roles": "8fa594ac-6786-4229-9bc6-4e16e114ed0e",
+        "id": 383
+      },
+      {
+        "role_permissions": "661a89ca-0c12-4f53-8bf6-7e38a90e091c",
+        "permission_roles": "a16b9c1c-1eb9-4be4-ab21-6df3ed7ce16f",
+        "id": 388
+      },
+      {
+        "role_permissions": "28d92a9d-a3e8-40c4-9271-ee38ded10035",
+        "permission_roles": "2fbe8133-9c59-45fb-8372-f1fcb0d6f945",
+        "id": 389
+      },
+      {
+        "role_permissions": "3dbda2da-b75a-42b4-b6e7-831a9b6a896c",
+        "permission_roles": "2fbe8133-9c59-45fb-8372-f1fcb0d6f945",
+        "id": 390
+      },
+      {
+        "role_permissions": "661a89ca-0c12-4f53-8bf6-7e38a90e091c",
+        "permission_roles": "2fbe8133-9c59-45fb-8372-f1fcb0d6f945",
+        "id": 391
+      },
+      {
+        "role_permissions": "0e3c8b7d-b93e-4a4b-83af-6199566b0fe6",
+        "permission_roles": "2fbe8133-9c59-45fb-8372-f1fcb0d6f945",
+        "id": 392
+      }
+    ],
+    "role_users__user_roles": [
+      {
+        "user_roles": "d154db4d-ef28-4bb8-a3b2-5f3eb62c1bb3",
+        "role_users": "a42395ee-e438-4fc5-a45b-c610c3313f20",
+        "id": 114
+      },
+      {
+        "role_users": "3dbda2da-b75a-42b4-b6e7-831a9b6a896c",
+        "user_roles": "2ad53a02-a9b9-4111-8422-6c5a6e30b8f2",
+        "id": 199
+      },
+      {
+        "role_users": "a42395ee-e438-4fc5-a45b-c610c3313f20",
+        "user_roles": "2ad53a02-a9b9-4111-8422-6c5a6e30b8f2",
+        "id": 200
+      },
+      {
+        "user_roles": "120e965b-f389-416e-bded-227aed9b5791",
+        "role_users": "28d92a9d-a3e8-40c4-9271-ee38ded10035",
+        "id": 206
+      },
+      {
+        "user_roles": "e62d268b-8fae-4d5c-a2f4-8bb7285037fc",
+        "role_users": "28d92a9d-a3e8-40c4-9271-ee38ded10035",
+        "id": 207
+      },
+      {
+        "user_roles": "d154db4d-ef28-4bb8-a3b2-5f3eb62c1bb3",
+        "role_users": "28d92a9d-a3e8-40c4-9271-ee38ded10035",
+        "id": 208
+      },
+      {
+        "user_roles": "fab31281-62e0-42f1-aefd-5d6a3457f861",
+        "role_users": "28d92a9d-a3e8-40c4-9271-ee38ded10035",
+        "id": 209
+      },
+      {
+        "user_roles": "d7131896-8f95-4712-a0de-367adad67413",
+        "role_users": "28d92a9d-a3e8-40c4-9271-ee38ded10035",
+        "id": 210
+      },
+      {
+        "role_users": "cbd65c2d-c5f9-42cf-9aa0-39b27ebf1271",
+        "user_roles": "00c0057e-6a55-4c2a-b297-deb0681fwebb",
+        "id": 212
+      },
+      {
+        "role_users": "94753106-4910-407d-874a-187e964be1e5",
+        "user_roles": "c434f57e-071d-455e-9a6f-c48db93db2b6",
+        "id": 213
+      },
+      {
+        "role_users": "6df65672-dde1-4039-8fde-6e5d774cb5da",
+        "user_roles": "67593179-0e25-4b6f-8246-fe1c37c30e13",
+        "id": 219
+      },
+      {
+        "role_users": "cbd65c2d-c5f9-42cf-9aa0-39b27ebf1271",
+        "user_roles": "67593179-0e25-4b6f-8246-fe1c37c30e13",
+        "id": 220
+      },
+      {
+        "role_users": "28d92a9d-a3e8-40c4-9271-ee38ded10035",
+        "user_roles": "ada3844d-08ca-4f20-9cb9-2cd9f352da86",
+        "id": 221
+      },
+      {
+        "role_users": "cbd65c2d-c5f9-42cf-9aa0-39b27ebf1271",
+        "user_roles": "75c86fe7-986a-4ba9-aca9-b25a6d7994ea",
+        "id": 231
+      },
+      {
+        "role_users": "3dbda2da-b75a-42b4-b6e7-831a9b6a896c",
+        "user_roles": "75c86fe7-986a-4ba9-aca9-b25a6d7994ea",
+        "id": 232
+      },
+      {
+        "role_users": "a42395ee-e438-4fc5-a45b-c610c3313f20",
+        "user_roles": "75c86fe7-986a-4ba9-aca9-b25a6d7994ea",
+        "id": 233
+      },
+      {
+        "role_users": "28d92a9d-a3e8-40c4-9271-ee38ded10035",
+        "user_roles": "75c86fe7-986a-4ba9-aca9-b25a6d7994ea",
+        "id": 234
+      },
+      {
+        "user_roles": "75c86fe7-986a-4ba9-aca9-b25a6d7994ea",
+        "role_users": "661a89ca-0c12-4f53-8bf6-7e38a90e091c",
+        "id": 265
+      },
+      {
+        "user_roles": "a2773bec-b69e-40f6-a2bc-eded79a36826",
+        "role_users": "661a89ca-0c12-4f53-8bf6-7e38a90e091c",
+        "id": 266
+      },
+      {
+        "user_roles": "8960549f-efd4-423e-87d4-0491568d6144",
+        "role_users": "661a89ca-0c12-4f53-8bf6-7e38a90e091c",
+        "id": 267
+      },
+      {
+        "user_roles": "8bac3e8d-0f80-44d7-bc57-55f619ea4725",
+        "role_users": "661a89ca-0c12-4f53-8bf6-7e38a90e091c",
+        "id": 268
+      },
+      {
+        "user_roles": "d487c128-621d-4e3a-9179-6b754c97f03a",
+        "role_users": "661a89ca-0c12-4f53-8bf6-7e38a90e091c",
+        "id": 269
+      },
+      {
+        "user_roles": "ae606a34-99a5-495f-8a32-96b6c49d7de3",
+        "role_users": "661a89ca-0c12-4f53-8bf6-7e38a90e091c",
+        "id": 270
+      },
+      {
+        "role_users": "3dbda2da-b75a-42b4-b6e7-831a9b6a896c",
+        "user_roles": "2b53d86b-daf8-4b5e-96af-d052b0d3131f",
+        "id": 271
+      },
+      {
+        "role_users": "0e3c8b7d-b93e-4a4b-83af-6199566b0fe6",
+        "user_roles": "f408c785-4151-4b0a-b6e8-78007b004578",
+        "id": 275
+      },
+      {
+        "role_users": "28d92a9d-a3e8-40c4-9271-ee38ded10035",
+        "user_roles": "bae2fb0b-d2ad-403a-87eb-f799ecb7efe7",
+        "id": 276
+      },
+      {
+        "role_users": "661a89ca-0c12-4f53-8bf6-7e38a90e091c",
+        "user_roles": "6095f4cd-1cbf-40de-bf76-bca52590382e",
+        "id": 277
+      },
+      {
+        "role_users": "661a89ca-0c12-4f53-8bf6-7e38a90e091c",
+        "user_roles": "d6323158-2138-427d-95c4-9bf7e977ae18",
+        "id": 278
+      },
+      {
+        "role_users": "765d7bea-0d0c-4755-9f31-0ab28d0c9472",
+        "user_roles": "8456c714-2f21-4487-8c84-071334ccc55a",
+        "id": 281
+      },
+      {
+        "role_users": "765d7bea-0d0c-4755-9f31-0ab28d0c9472",
+        "user_roles": "481e06ea-f4e2-4bad-9163-e10cd51037a0",
+        "id": 282
+      },
+      {
+        "role_users": "765d7bea-0d0c-4755-9f31-0ab28d0c9472",
+        "user_roles": "628da354-440f-4122-b987-c10b4f6637ed",
+        "id": 284
+      },
+      {
+        "role_users": "765d7bea-0d0c-4755-9f31-0ab28d0c9472",
+        "user_roles": "0abcc3a5-fe16-4a68-8718-a5295628cd8a",
+        "id": 285
+      },
+      {
+        "role_users": "765d7bea-0d0c-4755-9f31-0ab28d0c9472",
+        "user_roles": "a36a0279-1960-415d-a867-bbb4bafed286",
+        "id": 286
+      },
+      {
+        "role_users": "28d92a9d-a3e8-40c4-9271-ee38ded10035",
+        "user_roles": "e8b35d54-3864-4a4b-a36a-36c057031dfe",
+        "id": 289
+      },
+      {
+        "role_users": "661a89ca-0c12-4f53-8bf6-7e38a90e091c",
+        "user_roles": "e8b35d54-3864-4a4b-a36a-36c057031dfe",
+        "id": 290
+      },
+      {
+        "role_users": "661a89ca-0c12-4f53-8bf6-7e38a90e091c",
+        "user_roles": "a3e0e95d-7831-4b39-b048-cafe580690a0",
+        "id": 291
+      },
+      {
+        "role_users": "661a89ca-0c12-4f53-8bf6-7e38a90e091c",
+        "user_roles": "da9721cd-aff2-4610-af4f-78f56d8def4e",
+        "id": 292
+      },
+      {
+        "role_users": "661a89ca-0c12-4f53-8bf6-7e38a90e091c",
+        "user_roles": "d7fa35b0-7308-417d-abb4-924be74e3143",
+        "id": 293
+      },
+      {
+        "role_users": "661a89ca-0c12-4f53-8bf6-7e38a90e091c",
+        "user_roles": "63c8250e-b41d-44d1-9edf-0579cfc25478",
+        "id": 325
+      },
+      {
+        "role_users": "28d92a9d-a3e8-40c4-9271-ee38ded10035",
+        "user_roles": "81b02f0e-8133-455b-9636-4c5165fb4d98",
+        "id": 326
+      },
+      {
+        "role_users": "3dbda2da-b75a-42b4-b6e7-831a9b6a896c",
+        "user_roles": "81b02f0e-8133-455b-9636-4c5165fb4d98",
+        "id": 327
+      },
+      {
+        "role_users": "a42395ee-e438-4fc5-a45b-c610c3313f20",
+        "user_roles": "81b02f0e-8133-455b-9636-4c5165fb4d98",
+        "id": 328
+      },
+      {
+        "role_users": "765d7bea-0d0c-4755-9f31-0ab28d0c9472",
+        "user_roles": "81b02f0e-8133-455b-9636-4c5165fb4d98",
+        "id": 329
+      },
+      {
+        "role_users": "cbd65c2d-c5f9-42cf-9aa0-39b27ebf1271",
+        "user_roles": "81b02f0e-8133-455b-9636-4c5165fb4d98",
+        "id": 330
+      },
+      {
+        "role_users": "94753106-4910-407d-874a-187e964be1e5",
+        "user_roles": "81b02f0e-8133-455b-9636-4c5165fb4d98",
+        "id": 331
+      },
+      {
+        "role_users": "6df65672-dde1-4039-8fde-6e5d774cb5da",
+        "user_roles": "81b02f0e-8133-455b-9636-4c5165fb4d98",
+        "id": 332
+      },
+      {
+        "role_users": "661a89ca-0c12-4f53-8bf6-7e38a90e091c",
+        "user_roles": "81b02f0e-8133-455b-9636-4c5165fb4d98",
+        "id": 333
+      },
+      {
+        "role_users": "0e3c8b7d-b93e-4a4b-83af-6199566b0fe6",
+        "user_roles": "81b02f0e-8133-455b-9636-4c5165fb4d98",
+        "id": 334
+      },
+      {
+        "role_users": "2623f0ce-431d-4795-ba55-ad9e3a916135",
+        "user_roles": "81b02f0e-8133-455b-9636-4c5165fb4d98",
+        "id": 335
+      },
+      {
+        "role_users": "a42395ee-e438-4fc5-a45b-c610c3313f20",
+        "user_roles": "3f53c8c9-c4d3-40f2-994a-9238f605e230",
+        "id": 336
+      },
+      {
+        "role_users": "3dbda2da-b75a-42b4-b6e7-831a9b6a896c",
+        "user_roles": "3f53c8c9-c4d3-40f2-994a-9238f605e230",
+        "id": 337
+      },
+      {
+        "role_users": "765d7bea-0d0c-4755-9f31-0ab28d0c9472",
+        "user_roles": "3f53c8c9-c4d3-40f2-994a-9238f605e230",
+        "id": 338
+      },
+      {
+        "role_users": "cbd65c2d-c5f9-42cf-9aa0-39b27ebf1271",
+        "user_roles": "3f53c8c9-c4d3-40f2-994a-9238f605e230",
+        "id": 339
+      },
+      {
+        "role_users": "28d92a9d-a3e8-40c4-9271-ee38ded10035",
+        "user_roles": "3f53c8c9-c4d3-40f2-994a-9238f605e230",
+        "id": 340
+      },
+      {
+        "role_users": "2623f0ce-431d-4795-ba55-ad9e3a916135",
+        "user_roles": "3f53c8c9-c4d3-40f2-994a-9238f605e230",
+        "id": 341
+      },
+      {
+        "role_users": "661a89ca-0c12-4f53-8bf6-7e38a90e091c",
+        "user_roles": "3f53c8c9-c4d3-40f2-994a-9238f605e230",
+        "id": 342
+      },
+      {
+        "role_users": "0e3c8b7d-b93e-4a4b-83af-6199566b0fe6",
+        "user_roles": "3f53c8c9-c4d3-40f2-994a-9238f605e230",
+        "id": 343
+      },
+      {
+        "role_users": "94753106-4910-407d-874a-187e964be1e5",
+        "user_roles": "3f53c8c9-c4d3-40f2-994a-9238f605e230",
+        "id": 344
+      },
+      {
+        "role_users": "6df65672-dde1-4039-8fde-6e5d774cb5da",
+        "user_roles": "3f53c8c9-c4d3-40f2-994a-9238f605e230",
+        "id": 345
+      },
+      {
+        "role_users": "28d92a9d-a3e8-40c4-9271-ee38ded10035",
+        "user_roles": "e70f64a2-3583-426b-b5a9-d94540b549c4",
+        "id": 350
+      },
+      {
+        "role_users": "a42395ee-e438-4fc5-a45b-c610c3313f20",
+        "user_roles": "8c8480ba-96e3-4e86-ae21-1182512fa5c8",
+        "id": 351
+      },
+      {
+        "role_users": "28d92a9d-a3e8-40c4-9271-ee38ded10035",
+        "user_roles": "8c8480ba-96e3-4e86-ae21-1182512fa5c8",
+        "id": 352
+      },
+      {
+        "role_users": "28d92a9d-a3e8-40c4-9271-ee38ded10035",
+        "user_roles": "02916fe5-ac5c-4ac3-8656-cb03a90d5b87",
+        "id": 353
+      },
+      {
+        "role_users": "661a89ca-0c12-4f53-8bf6-7e38a90e091c",
+        "user_roles": "06837ec1-ec82-4570-b5bc-e8801780284f",
+        "id": 354
+      },
+      {
+        "role_users": "661a89ca-0c12-4f53-8bf6-7e38a90e091c",
+        "user_roles": "a8a8c6c5-7cc9-41fd-bfc2-25f83fdcbc8f",
+        "id": 355
+      },
+      {
+        "role_users": "661a89ca-0c12-4f53-8bf6-7e38a90e091c",
+        "user_roles": "6b4d8e81-0816-4b91-b4b4-6a128184a488",
+        "id": 356
+      },
+      {
+        "role_users": "661a89ca-0c12-4f53-8bf6-7e38a90e091c",
+        "user_roles": "9062901a-7bad-401a-8c8f-58ccc8cddadc",
+        "id": 357
+      },
+      {
+        "role_users": "661a89ca-0c12-4f53-8bf6-7e38a90e091c",
+        "user_roles": "36cfdbc8-9e76-4819-b1fb-d9ea820e6d32",
+        "id": 358
+      },
+      {
+        "role_users": "28d92a9d-a3e8-40c4-9271-ee38ded10035",
+        "user_roles": "5bb1dca1-015e-446b-b582-655e048751e5",
+        "id": 359
+      },
+      {
+        "role_users": "a42395ee-e438-4fc5-a45b-c610c3313f20",
+        "user_roles": "5bb1dca1-015e-446b-b582-655e048751e5",
+        "id": 360
+      },
+      {
+        "role_users": "661a89ca-0c12-4f53-8bf6-7e38a90e091c",
+        "user_roles": "5bb1dca1-015e-446b-b582-655e048751e5",
+        "id": 361
+      },
+      {
+        "role_users": "3dbda2da-b75a-42b4-b6e7-831a9b6a896c",
+        "user_roles": "5bb1dca1-015e-446b-b582-655e048751e5",
+        "id": 362
+      },
+      {
+        "role_users": "765d7bea-0d0c-4755-9f31-0ab28d0c9472",
+        "user_roles": "5bb1dca1-015e-446b-b582-655e048751e5",
+        "id": 363
+      },
+      {
+        "role_users": "661a89ca-0c12-4f53-8bf6-7e38a90e091c",
+        "user_roles": "52fa3810-5a4e-4cbc-9f50-9149ea78834b",
+        "id": 364
+      },
+      {
+        "role_users": "765d7bea-0d0c-4755-9f31-0ab28d0c9472",
+        "user_roles": "2d7084b1-a701-11e4-97b1-448a5b353255",
+        "id": 365
+      },
+      {
+        "role_users": "28d92a9d-a3e8-40c4-9271-ee38ded10035",
+        "user_roles": "2d7084b1-a701-11e4-97b1-448a5b353255",
+        "id": 366
+      }
+    ]
+  },
+  "schema": {
+    "permission": {
+      "id": {
+        "type": "string",
+        "primaryKey": true,
+        "unique": true
+      },
+      "name": {
+        "type": "string"
+      },
+      "url": {
+        "type": "string"
+      },
+      "meta": {
+        "type": "json"
+      },
+      "code": {
+        "type": "string",
+        "unique": true
+      },
+      "platform": {
+        "type": "string",
+        "model": "platform",
+        "foreignKey": true,
+        "alias": "platform"
+      },
+      "parent": {
+        "type": "string",
+        "model": "permission",
+        "foreignKey": true,
+        "alias": "parent"
+      },
+      "createdAt": {
+        "type": "datetime"
+      },
+      "updatedAt": {
+        "type": "datetime"
+      }
+    },
+    "platform": {
+      "id": {
+        "type": "string",
+        "primaryKey": true,
+        "unique": true
+      },
+      "name": {
+        "type": "string"
+      },
+      "code": {
+        "type": "string",
+        "unique": true
+      },
+      "createdAt": {
+        "type": "datetime"
+      },
+      "updatedAt": {
+        "type": "datetime"
+      }
+    },
+    "role": {
+      "id": {
+        "type": "string",
+        "primaryKey": true,
+        "unique": true
+      },
+      "name": {
+        "type": "string"
+      },
+      "code": {
+        "type": "string",
+        "unique": true
+      },
+      "createdAt": {
+        "type": "datetime"
+      },
+      "updatedAt": {
+        "type": "datetime"
+      }
+    },
+    "user": {
+      "id": {
+        "type": "string",
+        "primaryKey": true,
+        "unique": true
+      },
+      "createdAt": {
+        "type": "datetime"
+      },
+      "updatedAt": {
+        "type": "datetime"
+      }
+    },
+    "permission_roles__role_permissions": {
+      "id": {
+        "primaryKey": true,
+        "unique": true,
+        "autoIncrement": true,
+        "type": "integer"
+      },
+      "permission_roles": {
+        "type": "string",
+        "foreignKey": true,
+        "references": "permission",
+        "on": "id",
+        "via": "role_permissions"
+      },
+      "role_permissions": {
+        "type": "string",
+        "foreignKey": true,
+        "references": "role",
+        "on": "id",
+        "via": "permission_roles"
+      }
+    },
+    "role_users__user_roles": {
+      "id": {
+        "primaryKey": true,
+        "unique": true,
+        "autoIncrement": true,
+        "type": "integer"
+      },
+      "role_users": {
+        "type": "string",
+        "foreignKey": true,
+        "references": "role",
+        "on": "id",
+        "via": "user_roles"
+      },
+      "user_roles": {
+        "type": "string",
+        "foreignKey": true,
+        "references": "user",
+        "on": "id",
+        "via": "role_users"
+      }
+    }
+  },
+  "counters": {
+    "permission": {},
+    "platform": {},
+    "role": {},
+    "user": {},
+    "permission_roles__role_permissions": {
+      "id": 392
+    },
+    "role_users__user_roles": {
+      "id": 366
+    }
+  }
+}
