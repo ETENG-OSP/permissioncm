@@ -23,7 +23,7 @@ module.exports = function() {
 
   };
 
-  User.prototype.getRoles = function() {
+  User.prototype.getRoles = function(options) {
 
     var id = this.id;
     var RoleUser = require('./index').RoleUser;
@@ -31,7 +31,12 @@ module.exports = function() {
 
     return RoleUser.findAll({
       where: {userId: id},
-      include: [{model: Role}]
+      include: [
+        {
+          model: Role,
+          include: options.include
+        }
+      ]
     }).then(function(roleUsers) {
       return roleUsers.map(function(roleUser) {
         return roleUser.role;
@@ -40,7 +45,7 @@ module.exports = function() {
 
   };
 
-  User.prototype.getPermissions = function() {
+  User.prototype.getPermissions = function(options) {
 
     var id = this.id;
     var RoleUser = require('./index').RoleUser;
@@ -50,7 +55,13 @@ module.exports = function() {
     return RoleUser.findAll({
       where: {userId: id},
       include: [
-        {model: Role, include: Permission}
+        {
+          model: Role,
+          include: {
+            model: Permission,
+            include: options.include
+          }
+        }
       ]
     }).then(function(roleUsers) {
       var permissionSet = roleUsers.reduce(function(memo, roleUser) {
