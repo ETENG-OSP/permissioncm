@@ -34,7 +34,7 @@ module.exports = function() {
       include: [
         {
           model: Role,
-          include: options.include
+          include: options.include || []
         }
       ]
     }).then(function(roleUsers) {
@@ -59,7 +59,7 @@ module.exports = function() {
           model: Role,
           include: {
             model: Permission,
-            include: options.include
+            include: options.include || []
           }
         }
       ]

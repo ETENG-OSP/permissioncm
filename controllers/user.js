@@ -1,29 +1,14 @@
 var User = require('../models').User;
 var Permission = require('../models').Permission;
 var Role = require('../models').Role;
-
-function getInclude(req, Model) {
-  try {
-    var include = req.cm.param('_include');
-    if (Array.isArray(include)) {
-      throw new Error('include is not an array');
-    }
-    return include.map(function(name) {
-      return {
-        association: Model.associations[name]
-      };
-    });
-  } catch (err) {
-    return;
-  }
-}
+var query = require('../utils/query');
 
 function getPermissions(req, res, next) {
   var userId = req.cm.param('id');
   var user = new User(userId);
   user
     .getPermissions({
-      include: getInclude(req, Permission)
+      include: query.getInclude(req, Permission)
     })
     .then(function(permissions) {
       res.json(permissions);
@@ -36,7 +21,7 @@ function getRoles(req, res, next) {
   var user = new User(userId);
   user
     .getRoles({
-      include: getInclude(req, Role)
+      include: query.getInclude(req, Role)
     })
     .then(function(roles) {
       res.json(roles);
