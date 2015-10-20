@@ -94,7 +94,7 @@
     "/permissions/{id}": {
       "get": {
         "x-swagger-router-controller": "permission",
-        "operationId": "findOne",
+        "operationId": "findById",
         "tags": [
           "permission"
         ],
@@ -241,7 +241,7 @@
     "/roles/{id}": {
       "get": {
         "x-swagger-router-controller": "role",
-        "operationId": "findOne",
+        "operationId": "findById",
         "tags": [
           "role"
         ],
@@ -388,7 +388,7 @@
     "/platforms/{id}": {
       "get": {
         "x-swagger-router-controller": "platform",
-        "operationId": "findOne",
+        "operationId": "findById",
         "tags": [
           "platform"
         ],
@@ -490,6 +490,14 @@
         "parameters": [
           {
             "$ref": "#/parameters/id"
+          },
+          {
+            "name": "_include",
+            "type": "array",
+            "in": "query",
+            "items": {
+              "type": "string"
+            }
           }
         ],
         "responses": {

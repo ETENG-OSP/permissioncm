@@ -67,7 +67,7 @@
   "model": {
     "get": {
       "x-swagger-router-controller": {"$ref": "#/controller"},
-      "operationId": "findOne",
+      "operationId": "findById",
       "tags": [{"$ref": "#/name"}],
 
       "parameters": [

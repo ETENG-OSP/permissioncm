@@ -1,54 +1,23 @@
 var _ = require('underscore');
 var models = require('../models');
 
-var defaultPageSize = 30;
-var defaultSortDir = 'DESC';
-
 function resourceControllerFactory(Model, related) {
 
   return {
 
     findAll: function(req, res, next) {
-      var appId = req.cm.appId();
-      var include = req.cm.param('_include') || [];
-      var filters = req.cm.param('_filters') || '{}';
-      var sortField = req.cm.param('_sortField');
-      var sortDir = req.cm.param('_sortDir') || defaultSortDir;
-      var page = req.cm.param('_page') || 1;
-      var perPage = req.cm.param('_perPage') || defaultPageSize;
-
-      // pagination
-      var limit = perPage;
-      var offset = (page - 1) * limit;
-
-      // filter
-      var where = JSON.parse(filters);
-      where.applicationId = appId;
-
-      // ording
-      var order;
-      if (sortField) {
-        order = [
-          [sortField, sortDir]
-        ];
-      }
-
-      // association
-      include = include.map(function(name) {
-        return {
-          association: Model.associations[name]
-        };
-      });
-
       Model
-        .findAll({
-          where: where,
-          include: include,
-          order: order,
-          offset: offset,
-          limit: limit
+        .findAndCountAll({
+          where: getWhere(req),
+          include: getInclude(req, Model),
+          order: getOrder(req),
+          offset: getOffset(req),
+          limit: getLimit(req)
         })
-        .then(function(entities) {
+        .then(function(result) {
+          var count = result.count;
+          var entities = result.rows;
+          res.set('X-Total-Count', count);
           res.json(entities);
         })
         .catch(next);
@@ -68,21 +37,12 @@ function resourceControllerFactory(Model, related) {
         .catch(next);
     },
 
-    findOne: function(req, res, next) {
+    findById: function(req, res, next) {
       var id = req.cm.param('id');
-      var include = req.cm.param('_include') || [];
-
-      // association
-      include = include.map(function(name) {
-        return {
-          association: Model.associations[name]
-        };
-      });
 
       Model
-        .findOne({
-          where: {id: id},
-          include: include
+        .findById(id, {
+          include: getInclude(req, Model)
         })
         .then(function(entity) {
           res.json(entity);
@@ -141,6 +101,57 @@ function updateRelated(entity, data, related) {
 
 function capitalizeFirstLetter(string) {
   return string.charAt(0).toUpperCase() + string.slice(1);
+}
+
+function getInclude(req, Model) {
+  try {
+    var include = req.cm.param('_include');
+    if (Array.isArray(include)) {
+      throw new Error('include is not an array');
+    }
+    return include.map(function(name) {
+      return {
+        association: Model.associations[name]
+      };
+    });
+  } catch (err) {
+    return;
+  }
+}
+
+function getOrder(req) {
+  var defaultSortDir = 'DESC';
+  var order;
+  var sortField = req.cm.param('_sortField');
+  var sortDir = req.cm.param('_sortDir') || defaultSortDir;
+  if (sortField) {
+    order = [
+      [sortField, sortDir]
+    ];
+  }
+  return order;
+}
+
+function getWhere(req) {
+  var filters = req.cm.param('_filters') || '{}';
+  // filter
+  var where = JSON.parse(filters);
+  var appId = req.cm.appId();
+  where.applicationId = appId;
+  return where;
+}
+
+function getLimit(req) {
+  var defaultPageSize = 30;
+  var perPage = req.cm.param('_perPage') || defaultPageSize;
+  return perPage;
+}
+
+function getOffset(req) {
+  var limit = getLimit(req);
+  var page = req.cm.param('_page') || 1;
+  var offset = (page - 1) * limit;
+  return offset;
 }
 
 module.exports = resourceControllerFactory;
