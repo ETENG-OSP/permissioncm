@@ -25,7 +25,15 @@
       "tags": ["user"],
       "description": "查询用户角色",
       "parameters": [
-        {"$ref": "../refs.json#/parameters/id"}
+        {"$ref": "../refs.json#/parameters/id"},
+        {
+          "name": "_include",
+          "type": "array",
+          "in": "query",
+          "items": {
+            "type": "string"
+          }
+        }
       ],
       "responses": {
         "200": {"$ref": "../refs.json#/responses/Success"}

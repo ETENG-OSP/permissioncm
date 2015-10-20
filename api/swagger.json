@@ -517,6 +517,14 @@
         "parameters": [
           {
             "$ref": "#/parameters/id"
+          },
+          {
+            "name": "_include",
+            "type": "array",
+            "in": "query",
+            "items": {
+              "type": "string"
+            }
           }
         ],
         "responses": {
