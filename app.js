@@ -4,7 +4,6 @@ var swaggerTools = require('swagger-tools');
 var errorhandler = require('errorhandler');
 
 var nconf = require('./nconf');
-var sequelize = require('./sequelize');
 var swaggerObject = require('./api/swagger');
 var security = require('./utils/security');
 var param = require('./utils/param');
@@ -23,7 +22,6 @@ swaggerTools.initializeMiddleware(swaggerObject, function(middleware) {
 
   var app = express();
   app.use(cors());
-
   app.use(middleware.swaggerUi());
 
   app.use(security(securityOptions));
@@ -34,7 +32,7 @@ swaggerTools.initializeMiddleware(swaggerObject, function(middleware) {
 
   app.use(errorhandler());
 
-  app.listen(3001, function() {
+  app.listen(nconf.get('port'), function() {
     console.log('start up');
   });
 

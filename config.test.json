@@ -1,6 +1,6 @@
 {
 
-  "port": 3002,
+  "port": 3001,
   "database": "db",
   "dialect": "sqlite",
   "storage": "db.sqlite",
