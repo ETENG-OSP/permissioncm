@@ -45,7 +45,4 @@ module.exports = function(sequelize) {
 
   });
 
-  你好世界啊
-  aaaaaaaa
-
 };
