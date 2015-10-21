@@ -27,13 +27,25 @@ module.exports = function(sequelize) {
     meta: {
       type: Sequelize.TEXT,
       get: function() {
-        return JSON.parse(this.getDataValue('meta'));
+        try {
+          var result = JSON.parse(this.getDataValue('meta'));
+          return result;
+        } catch (err) {
+          return;
+        }
       },
       set: function(val) {
-        return this.setDataValue('meta', JSON.stringify(val));
+        try {
+          return this.setDataValue('meta', JSON.stringify(val));
+        } catch (err) {
+          return;
+        }
       }
     }
 
   });
+
+  你好世界啊
+  aaaaaaaa
 
 };
