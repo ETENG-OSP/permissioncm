@@ -37,7 +37,7 @@ function getWhere(req) {
   var where = _.reduce(where, function(memo, value, key) {
     if (typeof value === 'string') {
       memo[key] = {
-        $like: '%' + value + '%'
+        $like: value + '%'
       };
       return memo;
     }
