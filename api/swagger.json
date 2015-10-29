@@ -550,6 +550,9 @@
         "meta": {
           "type": "object"
         },
+        "description": {
+          "type": "string"
+        },
         "parent": {
           "$ref": "#/definitions/id"
         },
@@ -583,6 +586,9 @@
         },
         "meta": {
           "type": "object"
+        },
+        "description": {
+          "type": "string"
         },
         "parent": {
           "$ref": "#/definitions/id"

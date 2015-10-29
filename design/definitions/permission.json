@@ -6,6 +6,7 @@
       "name": {"type": "string"},
       "url": {"type": "string"},
       "meta": {"type": "object"},
+      "description": {"type": "string"},
       "parent": {"$ref": "../refs.json#/definitions/id"},
       "platform": {"$ref": "../refs.json#/definitions/Platform"}
 
@@ -19,6 +20,7 @@
       "name": {"type": "string"},
       "url": {"type": "string"},
       "meta": {"type": "object"},
+      "description": {"type": "string"},
       "parent": {"$ref": "../refs.json#/definitions/id"},
       "platform": {"$ref": "../refs.json#/definitions/id"},
 

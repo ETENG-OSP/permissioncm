@@ -24,6 +24,8 @@ module.exports = function(sequelize) {
 
     url: Sequelize.STRING,
 
+    description: Sequelize.TEXT,
+
     meta: {
       type: Sequelize.TEXT,
       get: function() {
