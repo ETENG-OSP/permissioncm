@@ -1,0 +1,23 @@
+{
+
+  "port": 3001,
+  "database": "promissioncm",
+  "dialect": "mysql",
+  "storage": "http://rds391p1q7kv102s2976.mysql.rds.aliyuncs.com:3306",
+  "username":"permission_admin",
+  "password":"xSeries330",
+
+  "swagger": {
+    "controllers": "./controllers"
+  },
+
+  "security": {
+    "tokenName": ["cm-api-key", "api_key"]
+  },
+
+  "feature": {
+    "id": "2",
+    "secret": "YTkxMzlkMGItZTIxZC00ODg1LWJjNDMtOGZmODlhYzk2NTM4"
+  }
+
+}
