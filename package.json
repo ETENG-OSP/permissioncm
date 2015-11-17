@@ -19,6 +19,6 @@
     "sequelize": "^3.11.0",
     "sqlite3": "^3.1.0",
     "swagger-tools": "^0.9.7",
-    "underscore": "^1.8.3"
-  }
+    "underscore": "^1.8.3",
+    "mysql": "^2.9.0"
 }

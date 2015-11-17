@@ -1,7 +1,8 @@
 {
 
   "port": 3011,
-  "database": "mysql://rds391p1q7kv102s2976.mysql.rds.aliyuncs.com:3306/promissioncm",
+  "database": "promissioncm",
+  "host":"rds391p1q7kv102s2976.mysql.rds.aliyuncs.com",
   "dialect": "mysql",
   "username":"permission_admin",
   "password":"xSeries330",
