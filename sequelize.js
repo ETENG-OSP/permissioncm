@@ -4,7 +4,7 @@ var nconf = require('./nconf');
 
 var database = nconf.get('database');
 var username = nconf.get('username');
-var password = nconf.get('passoword');
+var password = nconf.get('password');
 var options = {
   dialect: nconf.get('dialect'),
   storage: __dirname + '/' + nconf.get('storage')
