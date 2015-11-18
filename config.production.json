@@ -1,7 +1,7 @@
 {
 
   "port": 3011,
-  "database": "promissioncm",
+  "database": "cm_permission",
   "host":"rds391p1q7kv102s2976.mysql.rds.aliyuncs.com",
   "dialect": "mysql",
   "username":"permission_admin",
